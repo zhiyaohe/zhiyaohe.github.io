@@ -1,9 +1,10 @@
 一、相关网页
 
 ```bash
-贺志尧的博客： http://www.cnblogs.com/hezhiyao/
-贺志尧的GitHub： https://github.com/zhiyaohe/ 
-贺志尧的个人网页： https://zhiyaohe.github.io/
+个人微信公众号：AI菌（hzy2282815808）
+个人博客： http://www.cnblogs.com/hezhiyao/
+个人Github： https://github.com/zhiyaohe/ 
+个人网页： https://zhiyaohe.github.io/
 联系邮箱: zhiyaohe@outlook.com
 ```
 二、实践项目 
