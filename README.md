@@ -1,7 +1,7 @@
 一、相关网页
 
 ```bash
-个人微信公众号：AI菌（hzy2282815808）
+微信公众号：AI菌（hzy2282815808）
 个人博客： http://www.cnblogs.com/hezhiyao/
 个人Github： https://github.com/zhiyaohe/ 
 个人网页： https://zhiyaohe.github.io/
