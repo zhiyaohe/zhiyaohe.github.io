@@ -1,4 +1,5 @@
-​                                                   **Welcome to He Zhiyao's homepage！**
+​                                                             **Welcome to He Zhiyao's homepage！**
+
 一、相关网页
 
 ```bash
@@ -7,7 +8,7 @@
 贺志尧的个人网页： https://zhiyaohe.github.io/
 联系邮箱: zhiyaohe@outlook.com
 ```
-一、实践项目 
+二、实践项目 
 ```bash
 1、人脸识别项目                    http://www.cnblogs.com/hezhiyao/p/8438857.html 
 2、自动驾驶中的目标检测项目          http://www.cnblogs.com/hezhiyao/p/8428511.html
@@ -18,7 +19,7 @@
 7、基于注意力模型的机器翻译项目       http://www.cnblogs.com/hezhiyao/p/8747019.html
 8、触发字检测项目                   http://www.cnblogs.com/hezhiyao/p/8747025.html
 ```
-二、课程证书
+三、课程证书
 ```bash
 1、deep learning系列课程笔记及证书   https://github.com/hezhiyao/Coursera-DL-AndrewNg-Notes/
 ```
