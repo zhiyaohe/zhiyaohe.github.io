@@ -1103,7 +1103,7 @@ pre .javascript .function {
 }
 .site-meta {
   margin: 0;
-  text-align: left;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .site-meta {
@@ -1825,7 +1825,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #334093;
+  background: #2b9aff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2783,7 +2783,7 @@ hr {
 }
 .posts-expand .post-title,
 .posts-expand .post-meta {
-  text-align: left;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .posts-expand .post-title,
@@ -2942,4 +2942,7 @@ hr {
   border: none !important;
   transition-property: unset;
   padding: 0px 13px;
+}
+.post-more-link {
+  text-align: center;
 }
