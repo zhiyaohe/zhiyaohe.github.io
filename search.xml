@@ -43,6 +43,10 @@
 <p>2.ORACLE. (n.d.). Providing Constructors for Your Classes.<br><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html">https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html</a></p>
 <p>3.ORACLE. (n.d.). javap - The Java Class File Disassembler.<br><a href="https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javap.html">https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javap.html</a></p>
 ]]></content>
+      <categories>
+        <category>Java</category>
+        <category>CS1102</category>
+      </categories>
       <tags>
         <tag>Java</tag>
         <tag>CS1102</tag>
