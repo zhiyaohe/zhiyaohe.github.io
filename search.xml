@@ -41,7 +41,12 @@
 <h2 id="3-In-Conclusion"><a href="#3-In-Conclusion" class="headerlink" title="3. In Conclusion"></a>3. In Conclusion</h2><p>Based on the above examples and at a compiler level, we prove that the Java compiler does not always provide a default constructor. It only provides a default constructor when the programmer does not provide any constructor in the souce code.</p>
 <h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p>1.Downey, A.B., &amp; Mayfield, C. (2019). <em>Think Java (2nd ed.)</em>. Green Tea Press.<br><a href="https://open.umn.edu/opentextbooks/formats/331">https://open.umn.edu/opentextbooks/formats/331</a></p>
 <p>2.ORACLE. (n.d.). Providing Constructors for Your Classes.<br><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html">https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html</a></p>
-<p>3.ORACLE. (n.d.). javap - The Java Class File Disassembler.<br><a href="https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javap.html">https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javap.html</a></p>
+<p>3.ORACLE. (n.d.). javap - The Java Class File Disassembler.<br><a href="https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javap.html">https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javap.html</a>  </p>
+<p>​    </p>
+<hr>
+<center>This is the ending, thanks for reading.</center>
+
+<hr>
 ]]></content>
       <categories>
         <category>Java</category>
