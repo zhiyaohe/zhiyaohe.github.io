@@ -74,20 +74,6 @@
 
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/Java/</loc>
-    <lastmod>2022-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1102/</loc>
-    <lastmod>2022-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://zhiyaohe.github.io/tags/Hexo/</loc>
     <lastmod>2022-01-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -101,17 +87,31 @@
     <priority>0.2</priority>
   </url>
   
-
-  
   <url>
-    <loc>https://zhiyaohe.github.io/categories/Java/</loc>
+    <loc>https://zhiyaohe.github.io/tags/Java/</loc>
     <lastmod>2022-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
+    <loc>https://zhiyaohe.github.io/tags/CS1102/</loc>
+    <lastmod>2022-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+
+  
+  <url>
     <loc>https://zhiyaohe.github.io/categories/Hexo/</loc>
+    <lastmod>2022-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/categories/Java/</loc>
     <lastmod>2022-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
