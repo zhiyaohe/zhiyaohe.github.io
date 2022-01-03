@@ -1966,7 +1966,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c8ff34;
+  background: #e4f5ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2530,15 +2530,12 @@ pre .javascript .function {
   margin-right: 10px;
 }
 .site-uv::after {
-  content: ".";
+  content: "";
   padding-left: 5px;
 }
 .site-uv::before {
   content: "";
-  padding-left: 5px;
-}
-.site-uv .fa-eye::before {
-  padding-right: 5px;
+  padding-left: 10px;
 }
 .page-archive .archive-page-counter {
   position: relative;
