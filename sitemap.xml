@@ -83,20 +83,6 @@
 
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/Hexo/</loc>
-    <lastmod>2022-01-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/tags/Blog/</loc>
-    <lastmod>2022-01-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://zhiyaohe.github.io/tags/Java/</loc>
     <lastmod>2022-01-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -111,14 +97,21 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1102-Discussion-Assignment/</loc>
+    <loc>https://zhiyaohe.github.io/tags/Hexo/</loc>
     <lastmod>2022-01-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/Unit-2/</loc>
+    <loc>https://zhiyaohe.github.io/tags/Blog/</loc>
+    <lastmod>2022-01-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/tags/CS1102-Discussion-Assignment/</loc>
     <lastmod>2022-01-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -131,24 +124,17 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://zhiyaohe.github.io/tags/Unit-1/</loc>
-    <lastmod>2022-01-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
-    <loc>https://zhiyaohe.github.io/categories/Hexo/</loc>
+    <loc>https://zhiyaohe.github.io/categories/Java/</loc>
     <lastmod>2022-01-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/categories/Java/</loc>
+    <loc>https://zhiyaohe.github.io/categories/Hexo/</loc>
     <lastmod>2022-01-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
