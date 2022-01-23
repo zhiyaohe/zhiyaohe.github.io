@@ -2,9 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhiyaohe.github.io/2022/01/23/Keywords-super-and-this/</loc>
+    
+    <lastmod>2022-01-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/01/23/The-relationship-between-a-class-and-its-object/</loc>
+    
+    <lastmod>2022-01-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zhiyaohe.github.io/2022/01/22/Formal-parameters-and-actual-parameters/</loc>
     
-    <lastmod>2022-01-22</lastmod>
+    <lastmod>2022-01-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -85,7 +103,7 @@
 
   <url>
     <loc>https://zhiyaohe.github.io/</loc>
-    <lastmod>2022-01-22</lastmod>
+    <lastmod>2022-01-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -93,42 +111,42 @@
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/Java/</loc>
-    <lastmod>2022-01-22</lastmod>
+    <lastmod>2022-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1102/</loc>
-    <lastmod>2022-01-22</lastmod>
+    <lastmod>2022-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1102-Discussion-Assignment/</loc>
-    <lastmod>2022-01-22</lastmod>
+    <lastmod>2022-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/Private/</loc>
-    <lastmod>2022-01-22</lastmod>
+    <lastmod>2022-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/Hexo/</loc>
-    <lastmod>2022-01-22</lastmod>
+    <lastmod>2022-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/Blog/</loc>
-    <lastmod>2022-01-22</lastmod>
+    <lastmod>2022-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -137,14 +155,14 @@
   
   <url>
     <loc>https://zhiyaohe.github.io/categories/Java/</loc>
-    <lastmod>2022-01-22</lastmod>
+    <lastmod>2022-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/categories/Hexo/</loc>
-    <lastmod>2022-01-22</lastmod>
+    <lastmod>2022-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
