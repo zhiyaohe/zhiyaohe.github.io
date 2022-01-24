@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhiyaohe.github.io/2022/01/24/The-difference-between-a-chained-conditional-and-a-nested-conditional/</loc>
+    
+    <lastmod>2022-01-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zhiyaohe.github.io/2022/01/24/Argument-parameter-value-variable-and-expression/</loc>
     
     <lastmod>2022-01-24</lastmod>
@@ -204,6 +213,13 @@
   </url>
   
   <url>
+    <loc>https://zhiyaohe.github.io/tags/Public/</loc>
+    <lastmod>2022-01-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://zhiyaohe.github.io/tags/Hexo/</loc>
     <lastmod>2022-01-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -212,13 +228,6 @@
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/Blog/</loc>
-    <lastmod>2022-01-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/tags/Public/</loc>
     <lastmod>2022-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
