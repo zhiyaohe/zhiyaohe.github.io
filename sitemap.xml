@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://zhiyaohe.github.io/2021/12/31/How-to-build-a-personal-blog-with-Github-and-Hexo/</loc>
+    <loc>https://zhiyaohe.github.io/2022/01/24/The-difference-between-Pyhton-3-and-Python-2/</loc>
     
     <lastmod>2022-01-24</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/2022/01/24/The-difference-between-Pyhton-3-and-Python-2/</loc>
+    <loc>https://zhiyaohe.github.io/2021/12/31/How-to-build-a-personal-blog-with-Github-and-Hexo/</loc>
     
     <lastmod>2022-01-24</lastmod>
     
@@ -212,6 +212,13 @@
   
   <url>
     <loc>https://zhiyaohe.github.io/categories/Hexo/</loc>
+    <lastmod>2022-01-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/categories/Python/</loc>
     <lastmod>2022-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
