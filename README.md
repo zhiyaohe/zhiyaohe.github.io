@@ -1,11 +1,9 @@
 一、相关网页
 
 ```bash
-微信公众号：AI菌（hzy2282815808）
-个人博客： http://www.cnblogs.com/hezhiyao/
-个人Github： https://github.com/zhiyaohe/ 
-个人网页： https://zhiyaohe.github.io/
-联系邮箱: zhiyaohe@outlook.com
+Github： https://github.com/zhiyaohe/ 
+Blog： https://zhiyaohe.github.io/
+Email: zhiyaohe@outlook.com
 ```
 二、实践项目 
 ```bash
