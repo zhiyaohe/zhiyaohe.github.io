@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhiyaohe.github.io/2022/03/29/Calculate-the-root-of-a-quadratic-equation/</loc>
+    
+    <lastmod>2022-03-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zhiyaohe.github.io/2022/03/29/Fetch-the-information-stored-at-a-given-URL-on-the-web-save-that-data-to-a-file-and-handle-the-exceptions/</loc>
     
     <lastmod>2022-03-29</lastmod>
@@ -280,20 +289,6 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1103/</loc>
-    <lastmod>2022-03-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1103-Programming-Assignment/</loc>
-    <lastmod>2022-03-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://zhiyaohe.github.io/tags/CS1102/</loc>
     <lastmod>2022-03-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -308,7 +303,14 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/Public/</loc>
+    <loc>https://zhiyaohe.github.io/tags/CS1103/</loc>
+    <lastmod>2022-03-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/tags/CS1103-Programming-Assignment/</loc>
     <lastmod>2022-03-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -329,7 +331,21 @@
   </url>
   
   <url>
+    <loc>https://zhiyaohe.github.io/tags/Public/</loc>
+    <lastmod>2022-03-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://zhiyaohe.github.io/tags/CS1103-Discussion-Assignment/</loc>
+    <lastmod>2022-03-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/tags/CS1103-Exercise-Unit-1/</loc>
     <lastmod>2022-03-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
