@@ -317,6 +317,34 @@
 
   
   <url>
+    <loc>https://zhiyaohe.github.io/tags/Python/</loc>
+    <lastmod>2022-03-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/tags/CS1101/</loc>
+    <lastmod>2022-03-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/tags/CS1101-Discussion-Assignment/</loc>
+    <lastmod>2022-03-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/tags/Private/</loc>
+    <lastmod>2022-03-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://zhiyaohe.github.io/tags/Java/</loc>
     <lastmod>2022-03-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -338,35 +366,7 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/Private/</loc>
-    <lastmod>2022-03-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://zhiyaohe.github.io/tags/CS1103-Learning-Journal/</loc>
-    <lastmod>2022-03-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/tags/Python/</loc>
-    <lastmod>2022-03-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1101/</loc>
-    <lastmod>2022-03-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1101-Discussion-Assignment/</loc>
     <lastmod>2022-03-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -424,14 +424,14 @@
 
   
   <url>
-    <loc>https://zhiyaohe.github.io/categories/Java/</loc>
+    <loc>https://zhiyaohe.github.io/categories/Python/</loc>
     <lastmod>2022-03-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/categories/Python/</loc>
+    <loc>https://zhiyaohe.github.io/categories/Java/</loc>
     <lastmod>2022-03-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
