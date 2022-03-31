@@ -300,13 +300,6 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1103-Exercise/</loc>
-    <lastmod>2022-03-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://zhiyaohe.github.io/tags/CS1103-Learning-Journal/</loc>
     <lastmod>2022-03-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -335,6 +328,13 @@
   </url>
   
   <url>
+    <loc>https://zhiyaohe.github.io/tags/CS1103-Exercise/</loc>
+    <lastmod>2022-03-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://zhiyaohe.github.io/tags/CS1102/</loc>
     <lastmod>2022-03-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -343,6 +343,13 @@
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1102-Discussion-Assignment/</loc>
+    <lastmod>2022-03-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/tags/CS1103-Programming-Assignment/</loc>
     <lastmod>2022-03-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -364,13 +371,6 @@
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/Blog/</loc>
-    <lastmod>2022-03-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1103-Programming-Assignment/</loc>
     <lastmod>2022-03-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
