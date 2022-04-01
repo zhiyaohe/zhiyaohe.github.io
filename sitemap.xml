@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhiyaohe.github.io/2022/03/31/CS1103-Learning-Journal-Unit-2/</loc>
+    
+    <lastmod>2022-04-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/03/30/CS1103-Learning-Journal-Unit-1/</loc>
+    
+    <lastmod>2022-04-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zhiyaohe.github.io/2022/04/01/Create-a-tape-for-a-Turing-machine-using-a-doubly-linked-list/</loc>
     
     <lastmod>2022-04-01</lastmod>
@@ -21,15 +39,6 @@
   
   <url>
     <loc>https://zhiyaohe.github.io/2022/03/31/Why-does-using-ADTs-abstract-data-types-have-advantages-for-program-modularity/</loc>
-    
-    <lastmod>2022-03-31</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/03/31/CS1103-Learning-Journal-Unit-2/</loc>
     
     <lastmod>2022-03-31</lastmod>
     
@@ -66,15 +75,6 @@
   
   <url>
     <loc>https://zhiyaohe.github.io/2022/03/29/Calculate-the-root-of-a-quadratic-equation/</loc>
-    
-    <lastmod>2022-03-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/03/30/CS1103-Learning-Journal-Unit-1/</loc>
     
     <lastmod>2022-03-30</lastmod>
     
@@ -375,14 +375,14 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1103-Learning-Journal/</loc>
+    <loc>https://zhiyaohe.github.io/tags/CS1103-Exercise/</loc>
     <lastmod>2022-04-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1103-Exercise/</loc>
+    <loc>https://zhiyaohe.github.io/tags/CS1103-Learning-Journal/</loc>
     <lastmod>2022-04-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
