@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhiyaohe.github.io/2022/03/31/Does-the-moveRight-method-perform-its-duties-correctly/</loc>
+    
+    <lastmod>2022-04-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zhiyaohe.github.io/2022/03/30/CS1103-Learning-Journal-Unit-1/</loc>
     
     <lastmod>2022-04-01</lastmod>
@@ -21,15 +30,6 @@
   
   <url>
     <loc>https://zhiyaohe.github.io/2022/04/01/Create-a-tape-for-a-Turing-machine-using-a-doubly-linked-list/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/03/31/Does-the-moveRight-method-perform-its-duties-correctly/</loc>
     
     <lastmod>2022-04-01</lastmod>
     
@@ -354,13 +354,6 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1103-Learning-Journal/</loc>
-    <lastmod>2022-04-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://zhiyaohe.github.io/tags/Python/</loc>
     <lastmod>2022-04-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -382,14 +375,14 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1103-Exercise/</loc>
+    <loc>https://zhiyaohe.github.io/tags/CS1103-Learning-Journal/</loc>
     <lastmod>2022-04-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1103-Programming-Assignment/</loc>
+    <loc>https://zhiyaohe.github.io/tags/CS1103-Exercise/</loc>
     <lastmod>2022-04-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -411,6 +404,13 @@
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/Public/</loc>
+    <lastmod>2022-04-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/tags/CS1103-Programming-Assignment/</loc>
     <lastmod>2022-04-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
