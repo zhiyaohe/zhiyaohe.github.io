@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhiyaohe.github.io/2022/04/02/CS1103-Learning-Journal-Unit-3-ADTs-Stacks-Queues-and-Binary-Trees/</loc>
+    
+    <lastmod>2022-04-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zhiyaohe.github.io/2022/04/02/A-binary-sort-tree-created-by-inserting-items-in-a-random-order-is-approximately-balanced/</loc>
     
     <lastmod>2022-04-02</lastmod>
@@ -335,34 +344,6 @@
 
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/Python/</loc>
-    <lastmod>2022-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1101/</loc>
-    <lastmod>2022-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1101-Discussion-Assignment/</loc>
-    <lastmod>2022-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/tags/Private/</loc>
-    <lastmod>2022-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://zhiyaohe.github.io/tags/Java/</loc>
     <lastmod>2022-04-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -384,7 +365,7 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1103-Learning-Journal/</loc>
+    <loc>https://zhiyaohe.github.io/tags/Private/</loc>
     <lastmod>2022-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -398,7 +379,28 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1103-Programming-Assignment/</loc>
+    <loc>https://zhiyaohe.github.io/tags/CS1103-Learning-Journal/</loc>
+    <lastmod>2022-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/tags/Python/</loc>
+    <lastmod>2022-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/tags/CS1101/</loc>
+    <lastmod>2022-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/tags/CS1101-Discussion-Assignment/</loc>
     <lastmod>2022-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -413,6 +415,13 @@
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1102-Discussion-Assignment/</loc>
+    <lastmod>2022-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/tags/CS1103-Programming-Assignment/</loc>
     <lastmod>2022-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -442,14 +451,14 @@
 
   
   <url>
-    <loc>https://zhiyaohe.github.io/categories/Python/</loc>
+    <loc>https://zhiyaohe.github.io/categories/Java/</loc>
     <lastmod>2022-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/categories/Java/</loc>
+    <loc>https://zhiyaohe.github.io/categories/Python/</loc>
     <lastmod>2022-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
