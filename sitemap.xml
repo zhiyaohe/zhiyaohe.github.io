@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhiyaohe.github.io/2022/04/03/CS1103-Learning-Journal-Unit-4-Recursive-Descent-Parsers-Generic-Programming-and-Java-Collection-Framework/</loc>
+    
+    <lastmod>2022-04-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zhiyaohe.github.io/2022/04/03/Guidelines-for-choosing-the-suitable-Java-Collection/</loc>
     
     <lastmod>2022-04-03</lastmod>
@@ -415,6 +424,13 @@
   </url>
   
   <url>
+    <loc>https://zhiyaohe.github.io/tags/CS1103-Learning-Journal/</loc>
+    <lastmod>2022-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://zhiyaohe.github.io/tags/Python/</loc>
     <lastmod>2022-04-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -430,13 +446,6 @@
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1101-Discussion-Assignment/</loc>
-    <lastmod>2022-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1103-Learning-Journal/</loc>
     <lastmod>2022-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
