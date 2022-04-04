@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhiyaohe.github.io/2022/04/04/List-all-files-in-a-directory-and-all-its-subdirectories/</loc>
+    
+    <lastmod>2022-04-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zhiyaohe.github.io/2022/04/04/Learning-Journal-Unit-6-Files-and-Networking-Advanced-GUI-Programming/</loc>
     
     <lastmod>2022-04-04</lastmod>
@@ -480,14 +489,14 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/Public/</loc>
+    <loc>https://zhiyaohe.github.io/tags/CS1103-Discussion-Assignment/</loc>
     <lastmod>2022-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1103-Discussion-Assignment/</loc>
+    <loc>https://zhiyaohe.github.io/tags/Public/</loc>
     <lastmod>2022-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -515,14 +524,14 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1103-Learning-Journal/</loc>
+    <loc>https://zhiyaohe.github.io/tags/CS1103-Programming-Assignment/</loc>
     <lastmod>2022-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1103-Programming-Assignment/</loc>
+    <loc>https://zhiyaohe.github.io/tags/CS1103-Learning-Journal/</loc>
     <lastmod>2022-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
