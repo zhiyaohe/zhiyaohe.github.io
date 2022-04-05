@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://zhiyaohe.github.io/2022/04/03/CS1103-Learning-Journal-Unit-5-More-Generic-Programming-and-Collection-classes/</loc>
+    <loc>https://zhiyaohe.github.io/2022/04/05/CS1103-Learning-Journal-Unit-7-Actions-and-Buttons-Complex-Components-and-MVC/</loc>
     
     <lastmod>2022-04-05</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/2022/04/05/CS1103-Learning-Guide-Unit-7-Actions-and-Buttons-Complex-Components-and-MVC/</loc>
+    <loc>https://zhiyaohe.github.io/2022/04/03/CS1103-Learning-Journal-Unit-5-More-Generic-Programming-and-Collection-classes/</loc>
     
     <lastmod>2022-04-05</lastmod>
     
@@ -511,7 +511,7 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1103-Exercise/</loc>
+    <loc>https://zhiyaohe.github.io/tags/CS1103-Programming-Assignment/</loc>
     <lastmod>2022-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -525,7 +525,7 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1103-Programming-Assignment/</loc>
+    <loc>https://zhiyaohe.github.io/tags/CS1103-Exercise/</loc>
     <lastmod>2022-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
