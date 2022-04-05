@@ -96,7 +96,7 @@
 
 
 
-  <meta name="keywords" content="Java,Public,CS1102," />
+  <meta name="keywords" content="Java,CS1103,Private,CS1103 Learning Journal," />
 
 
 
@@ -107,22 +107,21 @@
 
 
 
-<meta name="description" content="IntroductionThe Java compiler does not always provide a default constructor. It only provides a default constructor when the programmer does not provide any constructor in the class. This blog will fi">
+<meta name="description" content="CS1103 Learning Journal Unit 7. Here&#39;s something encrypted, password is required to continue reading.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Is a default constructor always provided by the Java compiler?">
-<meta property="og:url" content="https://zhiyaohe.github.io/2021/12/30/Is-a-default-constructor-always-provided-by-the-Java-compiler/index.html">
+<meta property="og:title" content="CS1103 Learning Guide Unit 7 - Actions and Buttons, Complex Components and MVC">
+<meta property="og:url" content="https://zhiyaohe.github.io/2022/04/05/CS1103-Learning-Guide-Unit-7-Actions-and-Buttons-Complex-Components-and-MVC/index.html">
 <meta property="og:site_name" content="Zhiyao&#39;s Blog">
-<meta property="og:description" content="IntroductionThe Java compiler does not always provide a default constructor. It only provides a default constructor when the programmer does not provide any constructor in the class. This blog will fi">
+<meta property="og:description" content="CS1103 Learning Journal Unit 7. Here&#39;s something encrypted, password is required to continue reading.">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://github.com/zhiyaohe/blog-images/blob/main/2021-12-30-Is%20a%20default%20constructor%20always%20provided%20by%20the%20Java%20compiler/1.The%20process%20of%20compiling%20and%20interpreting%20a%20Java%20program.png?raw=true">
-<meta property="article:published_time" content="2021-12-30T06:44:19.000Z">
-<meta property="article:modified_time" content="2022-01-24T05:34:03.390Z">
+<meta property="article:published_time" content="2022-04-05T03:00:52.000Z">
+<meta property="article:modified_time" content="2022-04-05T03:07:45.665Z">
 <meta property="article:author" content="Zhiyao He">
 <meta property="article:tag" content="Java">
-<meta property="article:tag" content="Public">
-<meta property="article:tag" content="CS1102">
+<meta property="article:tag" content="CS1103">
+<meta property="article:tag" content="Private">
+<meta property="article:tag" content="CS1103 Learning Journal">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://github.com/zhiyaohe/blog-images/blob/main/2021-12-30-Is%20a%20default%20constructor%20always%20provided%20by%20the%20Java%20compiler/1.The%20process%20of%20compiling%20and%20interpreting%20a%20Java%20program.png?raw=true">
 
 
 
@@ -152,13 +151,13 @@
 
 
 
-  <link rel="canonical" href="https://zhiyaohe.github.io/2021/12/30/Is-a-default-constructor-always-provided-by-the-Java-compiler/"/>
+  <link rel="canonical" href="https://zhiyaohe.github.io/2022/04/05/CS1103-Learning-Guide-Unit-7-Actions-and-Buttons-Complex-Components-and-MVC/"/>
 
 
 
 
 
-  <title>Is a default constructor always provided by the Java compiler? | Zhiyao's Blog</title>
+  <title>CS1103 Learning Guide Unit 7 - Actions and Buttons, Complex Components and MVC | Zhiyao's Blog</title>
   
 
 
@@ -331,7 +330,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhiyaohe.github.io/2021/12/30/Is-a-default-constructor-always-provided-by-the-Java-compiler/">
+    <link itemprop="mainEntityOfPage" href="https://zhiyaohe.github.io/2022/04/05/CS1103-Learning-Guide-Unit-7-Actions-and-Buttons-Complex-Components-and-MVC/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -348,7 +347,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Is a default constructor always provided by the Java compiler?</h1>
+          <h1 class="post-title" itemprop="name headline">CS1103 Learning Guide Unit 7 - Actions and Buttons, Complex Components and MVC</h1>
         
 
         <div class="post-meta">
@@ -360,8 +359,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-12-30T14:44:19+08:00">
-                2021-12-30
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-04-05T11:00:52+08:00">
+                2022-04-05
               </time>
             
 
@@ -411,6 +410,10 @@
           
 
           
+              <div class="post-description">
+                  CS1103 Learning Journal Unit 7. Here's something encrypted, password is required to continue reading.
+              </div>
+          
 
         </div>
       </header>
@@ -425,51 +428,18 @@
       
 
       
-        <h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>The Java compiler does not always provide a default constructor. It only provides a default constructor when the programmer does not provide any constructor in the class. This blog will first introduce the different types of constructors and then prove that the compiler does not always provide a default constructor.</p>
-<span id="more"></span>
-
-<h2 id="1-Types-of-Constructors"><a href="#1-Types-of-Constructors" class="headerlink" title="1. Types of Constructors"></a>1. Types of Constructors</h2><p>Generally speaking, there are three types of constructors: <strong>the default constructor, no-parameter constructor, and constructor with parameters</strong>.</p>
-<p><strong>Default constructor</strong>: A constructor without parameters, which is created by the Java compiler during the compiling phase.</p>
-<p><strong>No-parameter constructor</strong>: A constructor without parameters, which is created by the programmers when they write the source code(.java file).</p>
-<p><strong>Constructor with parameters</strong>: A constructor that have some parameters, which is created by the programmers when they write the source code(.java file).</p>
-<h2 id="2-The-Proof-Process"><a href="#2-The-Proof-Process" class="headerlink" title="2. The Proof Process"></a>2. The Proof Process</h2><h3 id="2-1-The-process-of-compiling-and-interpreting-a-Java-program"><a href="#2-1-The-process-of-compiling-and-interpreting-a-Java-program" class="headerlink" title="2.1. The process of compiling and interpreting a Java program"></a>2.1. The process of compiling and interpreting a Java program</h3><p><img src="https://github.com/zhiyaohe/blog-images/blob/main/2021-12-30-Is%20a%20default%20constructor%20always%20provided%20by%20the%20Java%20compiler/1.The%20process%20of%20compiling%20and%20interpreting%20a%20Java%20program.png?raw=true" alt="process"></p>
-<center>The process of compiling and interpreting a Java program (Downey, 2019, p. 9)</center>
-
-<p>The process of compiling and interpreting a Java source code is: first, a programmer writes a .java file; second, the compiler will compile it to a .class file; finally, the interpreter(JVM, Java Virtue Machine) will interpret it.</p>
-<h3 id="2-2-The-proof-steps"><a href="#2-2-The-proof-steps" class="headerlink" title="2.2. The proof steps"></a>2.2. The proof steps</h3><p>The Java compiler would add the default constructor when compiling the .java file into the .class file. Hence, the .class file should have a constructor created by the compiler if it did provide. Therefore, we can check the .class file to see whether the compiler would give a default constructor if the programmers do not offer any constructor. For the .class file, we can use the <a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javap.html">javap</a> command to disassemble it, and the outputs will show us what it includes. Simply, the process is: </p>
-<center>Compiling the .java file –&gt; using javap to disassemble the .class file -&gt; ckeck the outputs</center>
-
-<p>Next, I will use two programs to prove: a .java file without any constructor given by the programmer and a .java file with a constructor provided by the programmer.</p>
-<h3 id="2-3-The-proof-examples"><a href="#2-3-The-proof-examples" class="headerlink" title="2.3. The proof examples"></a>2.3. The proof examples</h3><h4 id="2-3-1-Example-of-a-java-file-without-constructor-given-by-the-programmer"><a href="#2-3-1-Example-of-a-java-file-without-constructor-given-by-the-programmer" class="headerlink" title="2.3.1. Example of a .java file without constructor given by the programmer"></a>2.3.1. Example of a .java file without constructor given by the programmer</h4><p>The following <a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javap.html">DocFooter.java</a> is the source code without any constructor declaring by the programmer:</p>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.awt.*;</span><br><span class="line"><span class="keyword">import</span> java.applet.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DocFooter</span> <span class="keyword">extends</span> <span class="title">Applet</span> </span>{</span><br><span class="line">    String date;</span><br><span class="line">    String email;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>{</span><br><span class="line">        resize(<span class="number">500</span>, <span class="number">100</span>);</span><br><span class="line">        date = getParameter(<span class="string">"LAST_UPDATED"</span>);</span><br><span class="line">        email = getParameter(<span class="string">"EMAIL"</span>);</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">paint</span><span class="params">(Graphics g)</span> </span>{</span><br><span class="line">        g.drawString(date + <span class="string">" by "</span>, <span class="number">100</span>, <span class="number">15</span>);</span><br><span class="line">        g.drawString(email, <span class="number">290</span>, <span class="number">15</span>);</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<center>DocFooter.java without any constructor declaring by the programmer  (Oracle, n.d.)</center>
-
-<p>Now, we can use the java command to compile the DocFooter.java, and the compiler will generate a .class file, like this: </p>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\AI\Desktop&gt;java DocFooter.java</span><br></pre></td></tr></tbody></table></figure>
-
-<p>After getting the .class file, we can use the <a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javap.html">javap</a> command to disassemble it. And the outputs will show us what it includes:</p>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\AI\Desktop&gt;javap DocFooter.class</span><br><span class="line">Compiled from <span class="string">"DocFooter.java"</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DocFooter</span> <span class="keyword">extends</span> <span class="title">java</span>.<span class="title">applet</span>.<span class="title">Applet</span> </span>{</span><br><span class="line">    java.lang.String date;</span><br><span class="line">    java.lang.String email;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">DocFooter</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">paint</span><span class="params">(java.awt.Graphics)</span></span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<p>As we can see, there are no constructors in the DocFooter.java file, but in the disassemble outputs, there is a constructor: DocFooter(), which illustrates that the compiler would provide a default constructor if the programmer did not offer constructors to the class.</p>
-<h4 id="2-3-2-Example-of-a-java-file-with-a-constructor-provided-by-the-programmer"><a href="#2-3-2-Example-of-a-java-file-with-a-constructor-provided-by-the-programmer" class="headerlink" title="2.3.2. Example of a .java file with a constructor provided by the programmer"></a>2.3.2. Example of a .java file with a constructor provided by the programmer</h4><p>Now, I will add a constructor in the above DocFooter.java to see whether the compiler will add a default constructor. The following DocFooter.java is the source code with  a  constructor declaring by the programmer:</p>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.awt.*;</span><br><span class="line"><span class="keyword">import</span> java.applet.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DocFooter</span> <span class="keyword">extends</span> <span class="title">Applet</span> </span>{</span><br><span class="line">    String date;</span><br><span class="line">    String email;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// the constructor provided by the programmer</span></span><br><span class="line">    DocFooter(String date, String email) {</span><br><span class="line">        <span class="keyword">this</span>.date = date;</span><br><span class="line">        <span class="keyword">this</span>.email = email;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>{</span><br><span class="line">        resize(<span class="number">500</span>, <span class="number">100</span>);</span><br><span class="line">        date = getParameter(<span class="string">"LAST_UPDATED"</span>);</span><br><span class="line">        email = getParameter(<span class="string">"EMAIL"</span>);</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">paint</span><span class="params">(Graphics g)</span> </span>{</span><br><span class="line">        g.drawString(date + <span class="string">" by "</span>, <span class="number">100</span>, <span class="number">15</span>);</span><br><span class="line">        g.drawString(email, <span class="number">290</span>, <span class="number">15</span>);</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<center>DocFooter.java with a constructor declaring by the programmer</center>
-
-<p>Now, we can use the java command to compile the DocFooter.java, and the compiler will generate a .class file, like this: </p>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\AI\Desktop&gt;java DocFooter.java</span><br></pre></td></tr></tbody></table></figure>
-
-<p>After getting the .class file, we can use the <a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javap.html">javap</a> command to disassemble it. And the outputs will show us what it includes:</p>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\AI\Desktop&gt;javap DocFooter.class</span><br><span class="line">Compiled from <span class="string">"DocFooter.java"</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DocFooter</span> <span class="keyword">extends</span> <span class="title">java</span>.<span class="title">applet</span>.<span class="title">Applet</span> </span>{</span><br><span class="line">    java.lang.String date;</span><br><span class="line">    java.lang.String email;</span><br><span class="line">    DocFooter(java.lang.String, java.lang.String);</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">paint</span><span class="params">(java.awt.Graphics)</span></span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<p>As we can see, there is no default constructor in the outputs, and it only has the constructor: DocFooter(java.lang.String, java.lang.String), which the programmer provides. Hence, the compiler does not provide a default constructor if the programmer provides constructors in the source codes.</p>
-<h2 id="3-In-Conclusion"><a href="#3-In-Conclusion" class="headerlink" title="3. In Conclusion"></a>3. In Conclusion</h2><p>Based on the above examples and at a compiler level, we prove that the Java compiler does not always provide a default constructor. It only provides a default constructor when the programmer does not provide any constructor in the souce code.</p>
-<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p>1.Downey, A.B., &amp; Mayfield, C. (2019). <em>Think Java (2nd ed.)</em>. Green Tea Press.<br><a target="_blank" rel="noopener" href="https://open.umn.edu/opentextbooks/formats/331">https://open.umn.edu/opentextbooks/formats/331</a></p>
-<p>2.ORACLE. (n.d.). Providing Constructors for Your Classes.<br><a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html">https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html</a></p>
-<p>3.ORACLE. (n.d.). javap - The Java Class File Disassembler.<br><a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javap.html">https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javap.html</a>  </p>
-<p>​    </p>
-<hr>
-<center>This is the ending, thanks for reading.</center>
-
-<hr>
-
+        <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="974e5f57f2251b8587e0cfa51d564d0243832d27213535e552e75443bdb4e151">fed49fa51233fd53cd10723bb3033e44121f88c4f945b9538f77ae098500354e29c7fa428917922d06de070351d779ca819404a219af13b6a54810084f7aabb0f6832cde6c6b981499c31eb8c708d085bb8acca2503ebb4a9a079950ed0fa9bb5a1129a81f30d519a6e3ea928806d52e4d8d79a2a6e0227f83f44f5a84cdb6607e55c8897315b40a8cd894d4821df27ca0bb63626b77b4a75497442cc4c6a40724ce1cd2e6704a737c4aec36576e1d9e017ba6de30c34dcf226a8364ff4ac260d582884712102405ef9d805c2b2f54e0effe21dcc5c9f8c0c157b4545fe011b44cb05172e764811e51c746b7c350d4bda478874a74e500f290b61cec5b69716b36adbbad8cbabe4876cf69561b5c8ad6727c1bdc5ae8ad8a0c9754755f11ce134d6315d5c3c2df29e11a57e08a9501b2494fe53a42f5ce49ef9d4cc4fc94d75e35cb5f4876cebb9cbd83b5b3be536e340d313cbfe43b43b875bdb32611063078fe449deb8058e68045fdcef1d8a1470fb164ab7200dae70ce2cc46ac6410355006bacaeecb7bfd25c48a1c25c0bc991b0dfc392ecd65bea425389f80ff5c253498e21d6a23b15c34be249e67fa1d2c90e4c43758272e5b64a37c95153ce93425ba3c4d1dc621f1f21b7bc859c12d5fd53384f8d97143cde4b8e0fac62283fe6fb7fec1d96bce37b300e1524b9bea9783450ce8d83f13e81502033b0b4df4856e05246a54615407a22461b1798833b460db0f54e37e47afd22ac834489a2a7139181c285e236b7fd4a78714de7030b8bcec76d31661b1608352dbe8449c7352e456a6045c0ac6fd4d1049176043d87a237090827d70fde0328957ea8460186f5af97051aba7624775abe63abdd46a365c4c57f39bf9ba4fdf689c64c3a051bf610016a5231d2e1b0780735662343ad886efe261ad0388863c7e6759441d06fd450fa147e728d182d6843963d64df22bbb928b9da4b8abcf41003db270d9c6cd27fdaadb7a888777673766447f9b70bb07bf3b19ac36dd8180648e73700ff7f11674a42066e4523b53db10a342d64c59966e25b78b1cc23ca1fa5f168d40c3ba3c72939575781a082af5db41c464c4af26ecd5bea85a6e868144f90847940296bbbd97eb5c589b51f462c878bd78724d6688e4aedb3a6c07774cbad632683b9231f423e046b166dcebe7d0d5f93be9dde1ed0fe68163e9cd37b7559df00a08494d885795783489868dfa8ab362dc5cb173b6a8e8d133eb18574abcdee80bed129d0a2688fe707d993c81dde236e20f80a02e85565404837a56eaa92081eb2365bc202ff8d40d2f57398e69a37ee0ac5e2af3592d120e859b18fb79c8735fd2f324aa55034a9b37ea7776f074ae7aefa27b02dc117408c5305719b75322c56139377e2afb81cdd59e077591320cce49b7ff25338eb9e52e36daa2b7761567b0573d4744dba5fd5905f0161fa02ef72bb62501f22e13e5725bac21770e1ef29c8294bfc673dd8e5f920a1cc71676d743be0f2af155f7c732b50db1b593dab0606b9bc632a0c96e46b76b9532d1010d328796df20d79b9d46ce07fff860600678f83b75d55b9f4326dd2507396664b26b9afbc7f9c412e6ec6452230921b23fccfed7b1545ce7e29d0b3b501d4c795f6042e722968c42cb9f22f9f37b72865b03844f4e9f26ba8287d40ed2784b79b18f57fc64de70c3f3ce5bb4b846e9b2271b580b4cb6a0afd79814e0db4fdd8c2607fa562547c1c03ec4ce65e8d741b704ab4167be68938456f1951a8fc63659e69c81bf3d092f811e38eafb1cd8af410fa4269164a172c9b3edabbcde33012c55b903a436afcdfdcf17c2f558a9623a14bd525d7e6d912b011e2970ab757f0135e76af063a816e0fd431c7ec78d684595cdbce049ef42a50e5d1634987788dea20838dd40006dbe040e20f9f617b5928f890e44b26d3f62766a99b782904b21ed89d5022d348e4044266a729458432f00147b8b8e7c350c47d217a70f57d4cce30dc7349da1c867030ae32cd6ecdbd2ad0c32f73e755ba0421382c1b73605e9846bb287f0fb26110f384a9b9240859941468c68ea831565b4072954a61c51ba6c43dc31a71d7b3b62600767bbf576d613de3a6abf3d702e33cbb40003323af5786bdf6af06e0c9e465e3f3f9e5c90bff675776702a37100c24347df7d8eb36d1e2991700fbf43a372c08a841216c449850e44a9f2a19192891b005b9e52137df09659420cd8fee1d9febc7fa0b888e1b07835a760b3ca966b679077c756cbb8834f81aaa98264841e397fd8b8e64847af717f3b935c467ace972d7ad058294f66ce81dc9cc5fe891798f0dc070cb6c5170da7fb566b445ac348095077cb19fbe103f5a0b2dee53d633afcf430e6e974ac0122c99a0c637bd65cb1d93c4de2ee293af063b2adc2753fc599e21eaf1fc42b84c0a8a113de57a40643f35c581b0ff7b82a645af5d6f3956776326dc0d2423b2e1367781c63879ef431c5dfe211c1e3688354fa48d0ffab030cb8152428f45b94d138072a4ff3f939ff4e5b63a13e67b74fbc45a5e0425ba2f416f4562da4626ffac52dde323cb0f5b00c815bdfff4ec0168c4146bc9434c3d7e3f36d9f4567ff48132e8a45bd9aafa07bfd6f962043e7d7a6a72f30c825727d9917ea1c75d012d72fc877c809b3c247c84de0bb36ef17afd6ce33c0eedacdbcff41bc1f514a74f4ad8f1e0bbf3bab0db2938b13da2b35973fa364ddab70c1f346092707ef82d86f98c170a0f6bc6c7c52ecfa6b336c33e1b89cb93f7acd1444e22ca0c24867d57c95c64774da0c66ef2689df4e52baa9e3bb5323be64edd2425c0c09036654ac9510c72aa14a262e0addb89a82aa43c422ec316638baa3674d927d70e869f91590b478071abf419d6979fd3dfced569e4871dab3620e4173efe5e2d69b9d88081281769fc0bac38cabdd1cb9c79ea991c88bd85e9d5f2e4773862d8dca3c076741ad002d5711d67ee302908fdffc8e3b3cd7d6dcc29c14c6600b68bb05a27ee64bd627a5f18d9cadb7124bfb98ed6ab9a3eb72774f9ce8503b61c0d30c667c3602f2c527a99af072616ce6c887f2a4fa4df79ce66744c182566dce698eaca9bd753403106876b6be8f77d6fa0c9d6997bece82067a4c3d32481fcd8a8b0779571a77a492c387262b15eda5e2a1fb0da06e9b30237f541b926bfcb1f4ba33392a0733b1b2b15864ecba8f3691c57aca19799e84b9c6662184fe07f1af5ca151097488876ccb5312d007ba1028e95803b0487f58c336151324570948669f79264ddf8b4d557843206897f07171b35ead85a409b6418f24dcd445ab99c38f90def4cf5d11dd6ad3598b72ebe3675759b9784242fce4205cc49fcd39845d389d06d5c5b9f3be03ffd261b8c6cb692c22fa22cc0b1190cea166f41348f2f5920b23cea18c85eeea5aede8cac78a7b18f92239047eb250cb435b92e60790b79094d8996d6f1186855f7033c84614f5dce3aba90983fa752fc449cdaacd124e2b8d3b0ee9c8712555e83897849b1025b29a916a96528b55bbf9dc31d2db812c07bcc72c46c299b39394b33d93fd91cbf125ddd40b2a5362749c81f3541a4ccdcbd1279ac59eaef930778878296dec2714c8a0acd9fa9c801ebdaa8c371ad2374ba69ea36bba55f143765eb70ba39c01fe33ae71ebf45d21bf6b3a826fb7804691f2782edacbda1bd07be1cb4f0e235095b3ee575b3af8c10958c70de9d3fa5a32ab13da5269de4b79c85c5df69505982694547236d03fc3a250c52758db568d45f31fd8cec94bc06427353b0b7a873997df0b02526795cf49c23a37e912f87bafe06674a250b24951116510f42b56a69cd54b018dece2d6acb089d38a569fc990616a063549d3d15d89d2411a62c0a1ac008990870d20fc756a046ddf658191059b63b21aed4a9012ad5424e0e49cbe21c9a26694ad0ff110c316b5d2948ca15ce236343e3b32322f7507a132c47d6059a8d78bf6ebf9498d421147dd2545f6824a3e2811faff04cd88ae995b356b76ed7122598b0ea57095a13a4fa40b3a70cf2f5975682402e950bdd67639d2c086bcef9ea03a323ffeeef4f149094cd935422d69d888d03a33eeab7e5912c27d4663ec153526b777d0ee41b5a423795e3845eb88715373d628044f29564a35541271b3863cf67721c88b078fca1cdff0e4b45cf235b38bcc342a11866c60daca7cda7dbe2335cc905f3fc6f267b7b1b03028340367667abde5dbb2dac87c6effe22ead8f5609d976f08a22bee1f79e7dbf63fa9a3b562aa500753901bb622f26c160a43d97969792c0028c09b3a52661f1a8f22e9684524043d09e8d2d1e8e0a9806c68c347394d139479c0fa80e707df01609b823a9495c4fdb0e292df142b20e8edd89bb546ddb4c42a89ad2d0e435e893868e4f41e8fdce31d0382747efa5d4fedba343e496367f31eb4190c2dbfc105984ae21b3e15f89a5a262885ff16f6a21fc211bd26215c79d0782e4012d31d9ef1cfeb5ddd02d3235841fdb46c4dd839e6b6d89e9f8e8c52e22a8148334bc67104cb81d44ce9c0e1a861657c57649edb2afca4897f6d4d989d961e0266b3b475406d040843c78b5ad94b08c6988594e6286f553c51a7b54d3879ac7008540f5d18891fdd01836b5b21f859cb4852857e31780af37bbcfc2528193a5c0fc8c973f9eaf6beefdfa81d944c41390ad305af50488f251e168bce2fb2c2e98ab4ed54330428275cefbff7724d11644f4c13867549c0748b784cd14e5a62071bf2437a472e271317b5740dc3909347e6e6d5eef195c2ca17292031805ca7d57534bdb946a6609c523bcc358481c59499d7f979c1f9f81914ece30029a4f6d2f74b6d670dcb1177c093ff808677ab505fd16e622236a16e84eca4dfbc332505d89a401cfba8b62bb2282e1f3f5070db55d8bb2fbae021ab26182f80174649aaa6e69c3754c38f01ff2e221cd9693baf7a91647d6f16218e04f7762aed369e52e32fa80694fea03ccaf1e80ca56ca5528d0a051ededa58c381b23bfd045f8b6457982fb6e2647785e6aa267210482b5a28bdfdc2fd5abc024a74dc83b017b2c034d371e10311a5bb0c714d1c8ccc479fc403cd2476ce56920c6fc38a93054561da0bad45b161bb5f65aea90b0167d3925a7d11fc56bd05003f3638fc7116a87789cd54116eb9a377d3bb135820446343596f2af3e61e03e24b81ac09d7de187c19d112459d0582669ad1d0ed4d8ef8968c57cc672df8061d1b53d5621b8f8276e13b63bb2b43839154718d60232cf465d4c1c413dfea47b5db027822fb7a93037a9f7933788c24220e5e66885f45d744f81aa3bccf4272b6f28977c67efe090c31ce3e96ca1ed46ccf3f34c004b4f9e6124de04a39706ee7978d39c28dea6e81257dd677906f5eb30a4532fe03ba4d414d660c9669323934badf83e2224a67a2a6117a3437012f62b69210f7e1daf6e1ec9df65ed36e40cfcc5a2de2acabf5cb378dc7a9efe1dcf3dc7494137282c83e578b63acb6a6e1d6dad1b0ba4ad64a2b19468adde384e52ef6d01b7685e981c885e31df7b6b79416eb192437fdf4039e955462acc8585d98fcb2da1479231e5899d574a806c4c879e050fd40a80e66a3fb2ef325a80edfb13dd4fdad85563f8fa4b676b32188b5a80ceed9ad17932d3799c552e35e0778a9ce0de6febfa58c28113abff34e633cdab0530509376cb74fb3785a6db10291c88ceff524a971046ac6a2f5c10d2b49e2a3f26701c5dd617befd18359df2877006cfb349a25453d16c646cb9901edaed33b91bd299666b0355e4578777cc07f0d79d6749bb0b4d1b84235d23cd5a0364ca9f74b10e1a99e6b263ba698d123334cc2301b33250461d410b554b45eade79e06b9c3a22cf8d88c99620ce26d4d855f4966c0a72412318a2acc9fe14ff6ec961994cf4796ee6c54e89255f7ea1bc7878b8aa264a1b838fff780b4cbefd6f9c37035bd94804cea3222328b9c29b99f29caa1efc55f15f0ec7eb7323c6a9c66ae7ebd254c51c84f85afeb5cfe8f87b112ef0dde72713e7b4c017ff602ce427c22869b47abaca56e6ac1641ef48b812b0842b3eac98f2d8e25d64f75f4d5f3e2e3d56135a9ddeda09bdc9f53e433e3c31912462f4aa55c05c7491688ee0d47f1535cfdfc25bc14aec191375485b6d19410556ae0617e846fb3d88ab1b595c69125e2f3cdd5719e35cc9313c810f63f31103406ba9c1208b9750c01861c76d8682198235c08dc79774d8a1dae25fbf2bbb2eb1cf5040b687d5fd1f85413862dd9059b28279ac7e294b521812b9e2998290bcdf4d4852050e17e19fc4e6b5b54eedaaae9341db74d6d54f9a0dc5799c6355fc388a01b1ae59800e1ac4ef0f0dc3400c1f13c32273e7e5cbc025b5ae2e0bed4b829523d52d0ba05c79a7c96276768fdc859313153012c9b0a0a4a139f8b4dbca199da6ba801b16ac1adce10773682da4d5d4a34cd106428fbb5aa9f888681e20fd414385bc83c0b7ef97c4c71dbeaad5a142403018141dbc035a26bfa4ddc74bd6d17f7482cd4ad148ae8f690b534dffc5c080f80b5bc9a40b5bc4d54d3f6a706d9f1a86dbda8fa949b2af4f7c9bf683b4</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-up">
+      <input class="hbe hbe-input-field hbe-input-field-up" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-up" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-up">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
       
     </div>
     
@@ -513,7 +483,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="https://zhiyaohe.github.io/2021/12/30/Is-a-default-constructor-always-provided-by-the-Java-compiler/" title="Is a default constructor always provided by the Java compiler?">https://zhiyaohe.github.io/2021/12/30/Is-a-default-constructor-always-provided-by-the-Java-compiler/</a>
+    <a href="https://zhiyaohe.github.io/2022/04/05/CS1103-Learning-Guide-Unit-7-Actions-and-Buttons-Complex-Components-and-MVC/" title="CS1103 Learning Guide Unit 7 - Actions and Buttons, Complex Components and MVC">https://zhiyaohe.github.io/2022/04/05/CS1103-Learning-Guide-Unit-7-Actions-and-Buttons-Complex-Components-and-MVC/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -530,9 +500,11 @@
           
             <a href="/tags/Java/" rel="tag"># Java</a>
           
-            <a href="/tags/Public/" rel="tag"># Public</a>
+            <a href="/tags/CS1103/" rel="tag"># CS1103</a>
           
-            <a href="/tags/CS1102/" rel="tag"># CS1102</a>
+            <a href="/tags/Private/" rel="tag"># Private</a>
+          
+            <a href="/tags/CS1103-Learning-Journal/" rel="tag"># CS1103 Learning Journal</a>
           
         </div>
       
@@ -545,15 +517,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2022/04/05/A-stopwatch/" rel="next" title="A stopwatch">
+                <i class="fa fa-chevron-left"></i> A stopwatch
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2021/12/31/How-to-build-a-personal-blog-with-Github-and-Hexo/" rel="prev" title="Building a personal blog with Github and Hexo">
-                Building a personal blog with Github and Hexo <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -612,17 +584,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -702,22 +665,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Types-of-Constructors"><span class="nav-text">1. Types of Constructors</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-The-Proof-Process"><span class="nav-text">2. The Proof Process</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-The-process-of-compiling-and-interpreting-a-Java-program"><span class="nav-text">2.1. The process of compiling and interpreting a Java program</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-The-proof-steps"><span class="nav-text">2.2. The proof steps</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-The-proof-examples"><span class="nav-text">2.3. The proof examples</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-1-Example-of-a-java-file-without-constructor-given-by-the-programmer"><span class="nav-text">2.3.1. Example of a .java file without constructor given by the programmer</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-2-Example-of-a-java-file-with-a-constructor-provided-by-the-programmer"><span class="nav-text">2.3.2. Example of a .java file with a constructor provided by the programmer</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-In-Conclusion"><span class="nav-text">3. In Conclusion</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#References"><span class="nav-text">References</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -920,7 +867,7 @@
           repo: 'gitalk',
           owner: 'zhiyaohe',
           admin: ['zhiyaohe'],
-          id: 'gitalk_20211230144419',
+          id: 'gitalk_20220405110052',
           labels: 'gitalk'.split(',').filter(l => l),
           perPage: 10,
           pagerDirection: 'last',
