@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhiyaohe.github.io/2023/05/05/CS2401-Discussion-Assignment-Unit-1-The-Difference-between-developing-an-Aircraft-a-bridge-and-a-Word-Professor/</loc>
+    
+    <lastmod>2023-05-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zhiyaohe.github.io/2022/03/31/Does-the-moveRight-method-perform-its-duties-correctly/</loc>
     
     <lastmod>2022-04-09</lastmod>
@@ -508,7 +517,7 @@
 
   <url>
     <loc>https://zhiyaohe.github.io/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2023-05-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -516,105 +525,119 @@
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/Java/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1103/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1103-Exercise/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/Private/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1103-Programming-Assignment/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/Public/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1103-Discussion-Assignment/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/Python/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1101/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1101-Discussion-Assignment/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1103-Learning-Journal/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1102/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1102-Discussion-Assignment/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/Hexo/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/Blog/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2023-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/tags/CS2401/</loc>
+    <lastmod>2023-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/tags/CS2401-Discussion-Assignment/</loc>
+    <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -623,21 +646,21 @@
   
   <url>
     <loc>https://zhiyaohe.github.io/categories/Java/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/categories/Python/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/categories/Hexo/</loc>
-    <lastmod>2022-04-09</lastmod>
+    <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
