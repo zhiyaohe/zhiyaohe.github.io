@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhiyaohe.github.io/2023/05/05/CS2401-Learning-Journal-Unit-1-Software-Development-Life-Cycle-and-Software-Development-Models/</loc>
+    
+    <lastmod>2023-05-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zhiyaohe.github.io/2023/05/05/CS2401-Discussion-Assignment-Unit-1-The-Difference-between-developing-an-Aircraft-a-bridge-and-a-Word-Professor/</loc>
     
     <lastmod>2023-05-05</lastmod>
@@ -601,6 +610,13 @@
   </url>
   
   <url>
+    <loc>https://zhiyaohe.github.io/tags/Software-Engineering/</loc>
+    <lastmod>2023-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://zhiyaohe.github.io/tags/CS2401/</loc>
     <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -609,6 +625,13 @@
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS2401-Discussion-Assignment/</loc>
+    <lastmod>2023-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/tags/CS2401-Learning-Journal/</loc>
     <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -642,13 +665,6 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://zhiyaohe.github.io/tags/Software-Engineering/</loc>
-    <lastmod>2023-05-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
@@ -666,14 +682,14 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/categories/Hexo/</loc>
+    <loc>https://zhiyaohe.github.io/categories/Software-Engineering/</loc>
     <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/categories/Software-Engineering/</loc>
+    <loc>https://zhiyaohe.github.io/categories/Hexo/</loc>
     <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
