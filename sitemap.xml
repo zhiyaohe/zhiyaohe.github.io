@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://zhiyaohe.github.io/2021/12/31/How-to-build-a-personal-blog-with-Github-and-Hexo/</loc>
+    <loc>https://zhiyaohe.github.io/2023/05/05/CS2401-Discussion-Assignment-Unit-1-The-Difference-between-developing-an-Aircraft-a-bridge-and-a-Word-Professor/</loc>
     
     <lastmod>2023-05-05</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/2023/05/05/CS2401-Discussion-Assignment-Unit-1-The-Difference-between-developing-an-Aircraft-a-bridge-and-a-Word-Professor/</loc>
+    <loc>https://zhiyaohe.github.io/2021/12/31/How-to-build-a-personal-blog-with-Github-and-Hexo/</loc>
     
     <lastmod>2023-05-05</lastmod>
     
@@ -538,7 +538,7 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1103-Programming-Assignment/</loc>
+    <loc>https://zhiyaohe.github.io/tags/CS1103-Exercise/</loc>
     <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -552,7 +552,7 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1103-Exercise/</loc>
+    <loc>https://zhiyaohe.github.io/tags/CS1103-Programming-Assignment/</loc>
     <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -642,6 +642,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://zhiyaohe.github.io/tags/Software-Engineering/</loc>
+    <lastmod>2023-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -660,6 +667,13 @@
   
   <url>
     <loc>https://zhiyaohe.github.io/categories/Hexo/</loc>
+    <lastmod>2023-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/categories/Software-Engineering/</loc>
     <lastmod>2023-05-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
