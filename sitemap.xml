@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhiyaohe.github.io/2023/05/07/CS2401-Learning-Journal-Unit-2-Requirements-Engineering-and-Software-Architecture/</loc>
+    
+    <lastmod>2023-05-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2023/05/05/CS2401-Learning-Journal-Unit-1-Software-Development-Life-Cycle-and-Software-Development-Models/</loc>
+    
+    <lastmod>2023-05-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zhiyaohe.github.io/2023/05/07/CS2401-Programming-Assignment-Unit-2-Acceptance-Tests/</loc>
     
     <lastmod>2023-05-07</lastmod>
@@ -14,15 +32,6 @@
     <loc>https://zhiyaohe.github.io/2023/05/06/CS2401-Discussion-Assignment-Unit-2-Strengths-and-Weaknesses-of-Users-and-Developers-in-Requirements-Elicitation-Activities/</loc>
     
     <lastmod>2023-05-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2023/05/05/CS2401-Learning-Journal-Unit-1-Software-Development-Life-Cycle-and-Software-Development-Models/</loc>
-    
-    <lastmod>2023-05-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -600,6 +609,13 @@
   </url>
   
   <url>
+    <loc>https://zhiyaohe.github.io/tags/CS1103-Learning-Journal/</loc>
+    <lastmod>2023-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://zhiyaohe.github.io/tags/Python/</loc>
     <lastmod>2023-05-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -615,13 +631,6 @@
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1101-Discussion-Assignment/</loc>
-    <lastmod>2023-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1103-Learning-Journal/</loc>
     <lastmod>2023-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
