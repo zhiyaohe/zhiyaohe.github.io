@@ -2,279 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://zhiyaohe.github.io/2023/05/07/CS2401-Learning-Journal-Unit-2-Requirements-Engineering-and-Software-Architecture/</loc>
+    <loc>https://zhiyaohe.github.io/2022/01/23/Wrapper-classes-and-why-they-are-useful-for-ArrayLists/</loc>
     
-    <lastmod>2023-05-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2023/05/05/CS2401-Learning-Journal-Unit-1-Software-Development-Life-Cycle-and-Software-Development-Models/</loc>
-    
-    <lastmod>2023-05-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2023/05/07/CS2401-Programming-Assignment-Unit-2-Acceptance-Tests/</loc>
-    
-    <lastmod>2023-05-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2023/05/06/CS2401-Discussion-Assignment-Unit-2-Strengths-and-Weaknesses-of-Users-and-Developers-in-Requirements-Elicitation-Activities/</loc>
-    
-    <lastmod>2023-05-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2023/05/05/CS2401-Discussion-Assignment-Unit-1-The-Difference-between-developing-an-Aircraft-a-bridge-and-a-Word-Professor/</loc>
-    
-    <lastmod>2023-05-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2021/12/31/How-to-build-a-personal-blog-with-Github-and-Hexo/</loc>
-    
-    <lastmod>2023-05-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/03/31/Does-the-moveRight-method-perform-its-duties-correctly/</loc>
-    
-    <lastmod>2022-04-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/05/Some-GUI-Programming/</loc>
-    
-    <lastmod>2022-04-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/05/The-advantages-of-using-Java-GUI/</loc>
-    
-    <lastmod>2022-04-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/05/CS1103-Learning-Journal-Unit-7-Actions-and-Buttons-Complex-Components-and-MVC/</loc>
-    
-    <lastmod>2022-04-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/03/CS1103-Learning-Journal-Unit-5-More-Generic-Programming-and-Collection-classes/</loc>
-    
-    <lastmod>2022-04-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/05/A-stopwatch/</loc>
-    
-    <lastmod>2022-04-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/04/A-web-server/</loc>
-    
-    <lastmod>2022-04-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/04/The-Model-View-Controller-design-pattern-decouples-data-access-business-logic-data-presentation-and-user-interaction/</loc>
-    
-    <lastmod>2022-04-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/04/List-all-files-in-a-directory-and-all-its-subdirectories/</loc>
-    
-    <lastmod>2022-04-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/04/Learning-Journal-Unit-6-Files-and-Networking-Advanced-GUI-Programming/</loc>
-    
-    <lastmod>2022-04-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/04/Adding-another-nextLine-between-nextInt-and-nextLine-is-necessary/</loc>
-    
-    <lastmod>2022-04-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/04/ArrayLists-and-Files-in-a-GUI-Application/</loc>
-    
-    <lastmod>2022-04-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/04/The-differences-between-handling-Socket-and-ServerSocket/</loc>
-    
-    <lastmod>2022-04-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/03/Implement-hash-tables-from-scratch/</loc>
-    
-    <lastmod>2022-04-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/03/Use-HashSet-and-TreeSet-to-implement-a-spell-checker/</loc>
-    
-    <lastmod>2022-04-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/03/CS1103-Learning-Journal-Unit-4-Recursive-Descent-Parsers-Generic-Programming-and-Java-Collection-Framework/</loc>
-    
-    <lastmod>2022-04-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/03/Guidelines-for-choosing-the-suitable-Java-Collection/</loc>
-    
-    <lastmod>2022-04-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/03/Perform-the-union-intersection-and-difference-operations-on-sets-based-on-the-TreeSet-class/</loc>
-    
-    <lastmod>2022-04-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/02/Debugging/</loc>
-    
-    <lastmod>2022-04-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/02/Advantages-and-disadvantages-of-using-equals-and-the-alternative-for-equality/</loc>
-    
-    <lastmod>2022-04-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/02/CS1103-Learning-Journal-Unit-3-ADTs-Stacks-Queues-and-Binary-Trees/</loc>
-    
-    <lastmod>2022-04-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/02/A-binary-sort-tree-created-by-inserting-items-in-a-random-order-is-approximately-balanced/</loc>
-    
-    <lastmod>2022-04-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/03/30/CS1103-Learning-Journal-Unit-1/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/03/31/CS1103-Learning-Journal-Unit-2/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/04/01/Create-a-tape-for-a-Turing-machine-using-a-doubly-linked-list/</loc>
-    
-    <lastmod>2022-04-01</lastmod>
+    <lastmod>2026-09-19</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -283,70 +13,7 @@
   <url>
     <loc>https://zhiyaohe.github.io/2022/03/31/Why-does-using-ADTs-abstract-data-types-have-advantages-for-program-modularity/</loc>
     
-    <lastmod>2022-03-31</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/03/31/Calculate-the-factorial-N-and-Fibonacci-N-and-save-the-results-using-BigInteger/</loc>
-    
-    <lastmod>2022-03-31</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/03/31/Generate-random-sentences-based-on-a-set-of-syntax-rules/</loc>
-    
-    <lastmod>2022-03-31</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/03/31/Applicable-scenarios-of-recursive-algorithms-and-their-advantages-and-disadvantages/</loc>
-    
-    <lastmod>2022-03-31</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/03/29/Calculate-the-root-of-a-quadratic-equation/</loc>
-    
-    <lastmod>2022-03-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/03/29/Fetch-the-information-stored-at-a-given-URL-on-the-web-save-that-data-to-a-file-and-handle-the-exceptions/</loc>
-    
-    <lastmod>2022-03-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/03/29/How-to-add-nodes-to-the-beginning-end-and-middle-of-a-doubly-linked-list/</loc>
-    
-    <lastmod>2022-03-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/03/28/Sort-arrays-using-different-sorting-methods-and-compare-their-times/</loc>
-    
-    <lastmod>2022-03-28</lastmod>
+    <lastmod>2026-09-19</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -355,7 +22,394 @@
   <url>
     <loc>https://zhiyaohe.github.io/2022/03/28/Who-should-be-responsible-for-catching-and-handling-exceptions-the-computer-or-the-computer-program/</loc>
     
-    <lastmod>2022-03-28</lastmod>
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/01/25/Value-object-reference-and-aliasing/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/03/Use-HashSet-and-TreeSet-to-implement-a-spell-checker/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/01/24/Three-possibilities-to-consider-if-a-function-is-not-working/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/01/23/The-relationship-between-a-class-and-its-object/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/04/The-Model-View-Controller-design-pattern-decouples-data-access-business-logic-data-presentation-and-user-interaction/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/04/The-differences-between-handling-Socket-and-ServerSocket/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/01/24/The-difference-between-Pyhton-3-and-Python-2/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/01/09/The-difference-between-a-syntax-error-and-a-semantic-error/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/01/24/The-difference-between-a-chained-conditional-and-a-nested-conditional/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/05/The-advantages-of-using-Java-GUI/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/03/28/Sort-arrays-using-different-sorting-methods-and-compare-their-times/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/05/Some-GUI-Programming/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/03/Perform-the-union-intersection-and-difference-operations-on-sets-based-on-the-TreeSet-class/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/01/23/Object-oriented-features-and-their-application-in-the-Quiz-program/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/01/09/Loops-and-their-pros-and-cons/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/04/List-all-files-in-a-directory-and-all-its-subdirectories/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/04/Learning-Journal-Unit-6-Files-and-Networking-Advanced-GUI-Programming/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/01/23/Keywords-super-and-this/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2021/12/30/Is-a-default-constructor-always-provided-by-the-Java-compiler/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/03/Implement-hash-tables-from-scratch/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/01/25/How-tuples-can-be-useful-with-loops-over-lists-and-dictionaries/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2021/12/31/How-to-build-a-personal-blog-with-Github-and-Hexo/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/03/29/How-to-add-nodes-to-the-beginning-end-and-middle-of-a-doubly-linked-list/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/03/Guidelines-for-choosing-the-suitable-Java-Collection/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/03/31/Generate-random-sentences-based-on-a-set-of-syntax-rules/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/01/22/Formal-parameters-and-actual-parameters/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/03/29/Fetch-the-information-stored-at-a-given-URL-on-the-web-save-that-data-to-a-file-and-handle-the-exceptions/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/03/31/Does-the-moveRight-method-perform-its-duties-correctly/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/01/24/Does-the-following-program-actually-check-whether-its-argument-has-any-lowercase-letters/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/01/23/Details-of-the-mouse-event-handling/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/02/Debugging/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2023/05/07/CS2401-Programming-Assignment-Unit-2-Acceptance-Tests/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2023/05/07/CS2401-Learning-Journal-Unit-2-Requirements-Engineering-and-Software-Architecture/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2023/05/05/CS2401-Learning-Journal-Unit-1-Software-Development-Life-Cycle-and-Software-Development-Models/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2023/05/06/CS2401-Discussion-Assignment-Unit-2-Strengths-and-Weaknesses-of-Users-and-Developers-in-Requirements-Elicitation-Activities/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2023/05/05/CS2401-Discussion-Assignment-Unit-1-The-Difference-between-developing-an-Aircraft-a-bridge-and-a-Word-Professor/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/05/CS1103-Learning-Journal-Unit-7-Actions-and-Buttons-Complex-Components-and-MVC/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/03/CS1103-Learning-Journal-Unit-5-More-Generic-Programming-and-Collection-classes/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/03/CS1103-Learning-Journal-Unit-4-Recursive-Descent-Parsers-Generic-Programming-and-Java-Collection-Framework/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/02/CS1103-Learning-Journal-Unit-3-ADTs-Stacks-Queues-and-Binary-Trees/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/03/31/CS1103-Learning-Journal-Unit-2/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/03/30/CS1103-Learning-Journal-Unit-1/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/01/Create-a-tape-for-a-Turing-machine-using-a-doubly-linked-list/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -364,7 +418,97 @@
   <url>
     <loc>https://zhiyaohe.github.io/2022/01/25/Catching-file-errors-with-try-except-blocks/</loc>
     
-    <lastmod>2022-01-28</lastmod>
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/03/29/Calculate-the-root-of-a-quadratic-equation/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/03/31/Calculate-the-factorial-N-and-Fibonacci-N-and-save-the-results-using-BigInteger/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/04/ArrayLists-and-Files-in-a-GUI-Application/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/01/24/Argument-parameter-value-variable-and-expression/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/03/31/Applicable-scenarios-of-recursive-algorithms-and-their-advantages-and-disadvantages/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/02/Advantages-and-disadvantages-of-using-equals-and-the-alternative-for-equality/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/04/Adding-another-nextLine-between-nextInt-and-nextLine-is-necessary/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/04/A-web-server/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/05/A-stopwatch/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/2022/04/02/A-binary-sort-tree-created-by-inserting-items-in-a-random-order-is-approximately-balanced/</loc>
+    
+    <lastmod>2026-09-19</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -374,150 +518,6 @@
     <loc>https://zhiyaohe.github.io/about/index.html</loc>
     
     <lastmod>2022-01-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/01/25/How-tuples-can-be-useful-with-loops-over-lists-and-dictionaries/</loc>
-    
-    <lastmod>2022-01-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/01/25/Value-object-reference-and-aliasing/</loc>
-    
-    <lastmod>2022-01-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/01/24/Does-the-following-program-actually-check-whether-its-argument-has-any-lowercase-letters/</loc>
-    
-    <lastmod>2022-01-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/01/24/Three-possibilities-to-consider-if-a-function-is-not-working/</loc>
-    
-    <lastmod>2022-01-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/01/24/The-difference-between-a-chained-conditional-and-a-nested-conditional/</loc>
-    
-    <lastmod>2022-01-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/01/24/Argument-parameter-value-variable-and-expression/</loc>
-    
-    <lastmod>2022-01-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2021/12/30/Is-a-default-constructor-always-provided-by-the-Java-compiler/</loc>
-    
-    <lastmod>2022-01-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/01/24/The-difference-between-Pyhton-3-and-Python-2/</loc>
-    
-    <lastmod>2022-01-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/01/23/Object-oriented-features-and-their-application-in-the-Quiz-program/</loc>
-    
-    <lastmod>2022-01-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/01/23/Wrapper-classes-and-why-they-are-useful-for-ArrayLists/</loc>
-    
-    <lastmod>2022-01-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/01/23/Keywords-super-and-this/</loc>
-    
-    <lastmod>2022-01-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/01/23/Details-of-the-mouse-event-handling/</loc>
-    
-    <lastmod>2022-01-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/01/23/The-relationship-between-a-class-and-its-object/</loc>
-    
-    <lastmod>2022-01-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/01/22/Formal-parameters-and-actual-parameters/</loc>
-    
-    <lastmod>2022-01-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/01/09/Loops-and-their-pros-and-cons/</loc>
-    
-    <lastmod>2022-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/2022/01/09/The-difference-between-a-syntax-error-and-a-semantic-error/</loc>
-    
-    <lastmod>2022-01-09</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -553,7 +553,7 @@
 
   <url>
     <loc>https://zhiyaohe.github.io/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -561,140 +561,140 @@
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/Java/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1103/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1103-Exercise/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/Private/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1103-Programming-Assignment/</loc>
-    <lastmod>2023-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhiyaohe.github.io/tags/Public/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1103-Discussion-Assignment/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1103-Learning-Journal/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhiyaohe.github.io/tags/Public/</loc>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/Python/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1101/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1101-Discussion-Assignment/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/Software-Engineering/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS2401/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS2401-Discussion-Assignment/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS2401-Learning-Journal/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS2401-Programming-Assignment/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1102/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/CS1102-Discussion-Assignment/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/Hexo/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/tags/Blog/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -703,28 +703,28 @@
   
   <url>
     <loc>https://zhiyaohe.github.io/categories/Java/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/categories/Python/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/categories/Software-Engineering/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://zhiyaohe.github.io/categories/Hexo/</loc>
-    <lastmod>2023-05-07</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
