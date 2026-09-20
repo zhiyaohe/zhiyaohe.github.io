@@ -430,7 +430,7 @@
   <section id="about" class="about">
     <h2 class="section-h">About</h2>
     <p>I am an AI engineer working on embodied AI. I build robot pipelines that connect perception, language models, planning and control, taking systems from simulation in Gazebo, MuJoCo and Isaac Gym to real hardware.</p>
-    <p>My most recent system is voice-controlled navigation and manipulation on the Unitree Go2-W quadruped with a D1 arm. Alongside that I build offline, on-device voice agents for service robots. My goal is a PhD in robot learning, and specifically how robots can acquire manipulation skills that transfer reliably to the real world.</p>
+    <p>My most recent system is voice-controlled navigation and manipulation on the Unitree Go2-W quadruped with a D1 arm. Alongside that I build offline, on-device voice agents for service robots. My goal is to do a PhD in robot learning, especially on how robots can learn to perceive, reason, and act reliably in real-world environments.</p>
     <p class="muted">Based in the Hengqin Island &amp; Macau area. M.S. from Hohai University. TOEFL 100/120, CEFR C1.</p>
   </section>
 
@@ -444,8 +444,8 @@
         <div class="venue">Go2-W quadruped + D1 arm · team project with Macau Millennium College · ROS 2</div>
         <p class="lede">A quadruped that hears a spoken request, navigates to a target, and grasps it. I owned the perception and manipulation halves of the system.</p>
         <div class="roles">
-          <div class="role-line"><div class="lab">Perception</div><div class="val">Fine-tuned <b>YOLO11</b> by transfer learning to detect a specific bottle; a wrist-mounted depth camera and 2D-to-3D transform locate the target in the world frame.</div></div>
-          <div class="role-line"><div class="lab">Manipulation</div><div class="val">A grasping pipeline on <b>MoveIt 2</b>: KDL inverse kinematics, OMPL / RRTConnect planning, FCL collision checking, planning a collision-free path and executing the grasp.</div></div>
+          <div class="role-line"><div class="lab">Perception</div><div class="val">Fine-tuned YOLO11 by transfer learning to detect a specific bottle; a wrist-mounted depth camera and 2D-to-3D transform locate the target in the world frame.</div></div>
+          <div class="role-line"><div class="lab">Manipulation</div><div class="val">A grasping pipeline on MoveIt 2: KDL inverse kinematics, OMPL / RRTConnect planning, FCL collision checking, planning a collision-free path and executing the grasp.</div></div>
           <div class="role-line"><div class="lab">Integration</div><div class="val"><span class="mut">Teammates built SLAM navigation and the ASR / LLM / TTS pipeline; we defined the interfaces and integrated the full system, tested in MuJoCo and Gazebo and on the real robot.</span></div></div>
         </div>
         <div class="stack">
@@ -465,7 +465,7 @@
         <div class="venue">In-store retail assistant · industry project for CTM (Macau Telecom) · runs fully offline on Jetson</div>
         <p class="lede">Customers ask about products, plans and pricing by voice; the robot answers with no network dependency, so it stays reliable during live events.</p>
         <div class="roles">
-          <div class="role-line"><div class="lab">Pipeline</div><div class="val">A bridge node streams the X2's microphone audio to a local <b>FastAPI</b> backend running local ASR (<b>FunASR / Paraformer-zh</b>), a local LLM (<b>Qwen2.5-7B</b> via Ollama), and <b>pgvector</b> RAG over a PostgreSQL product database.</div></div>
+          <div class="role-line"><div class="lab">Pipeline</div><div class="val">A bridge node streams the X2's microphone audio to a local FastAPI backend running local ASR (FunASR / Paraformer-zh), a local LLM (Qwen2.5-7B via Ollama), and pgvector RAG over a PostgreSQL product database.</div></div>
           <div class="role-line"><div class="lab">Output</div><div class="val"><span class="mut">Answers are spoken through the X2's built-in offline TTS. An online variant integrates with third-party business systems to act on live backend data.</span></div></div>
         </div>
         <div class="stack">
@@ -485,8 +485,8 @@
         <div class="venue">Company education product · team reproduction of Unitree's open-source Qmini</div>
         <p class="lede">Bringing a reproduced humanoid to life and teaching it to walk in simulation, then setting up the training stack the team builds on.</p>
         <div class="roles">
-          <div class="role-line"><div class="lab">Bring-up</div><div class="val">Brought up and debugged the <b>control system</b> and <b>power system</b> on the reproduced robot.</div></div>
-          <div class="role-line"><div class="lab">Learning</div><div class="val">Ran <b>reinforcement-learning locomotion</b> training in Isaac Gym; set up Gazebo, MuJoCo and Isaac Gym environments for AKI and the Unitree G1 / R1 humanoids.</div></div>
+          <div class="role-line"><div class="lab">Bring-up</div><div class="val">Brought up and debugged the control system and power system on the reproduced robot.</div></div>
+          <div class="role-line"><div class="lab">Learning</div><div class="val">Ran reinforcement-learning locomotion training in Isaac Gym; set up Gazebo, MuJoCo and Isaac Gym environments for AKI and the Unitree G1 / R1 humanoids.</div></div>
         </div>
         <div class="stack">
           <span class="chip">Isaac Gym</span><span class="chip">Reinforcement Learning</span><span class="chip">MuJoCo</span><span class="chip">Gazebo</span><span class="chip">Unitree G1 / R1</span><span class="chip">control systems</span>
@@ -503,7 +503,7 @@
     <h2 class="section-h">Research Interests</h2>
     <div class="interests">
       <div class="interest"><div class="n">01</div><div class="t">Robot Learning &amp; Reinforcement Learning</div><div class="d">Learning locomotion and manipulation policies in simulation and transferring them to hardware.</div></div>
-      <div class="interest"><div class="n">02</div><div class="t">Vision-Language-Action Models</div><div class="d">Grounding language and perception into robot actions for open-ended tasks.</div></div>
+      <div class="interest"><div class="n">02</div><div class="t">Vision-Language-Action &amp; World Action Models</div><div class="d">Grounding language and perception into robot actions for open-ended tasks.</div></div>
       <div class="interest"><div class="n">03</div><div class="t">Manipulation &amp; Grasping</div><div class="d">Reliable grasping and motion planning under real-world perception noise.</div></div>
       <div class="interest"><div class="n">04</div><div class="t">Simulation, SLAM &amp; Navigation</div><div class="d">Building the sim-to-real and navigation stack that manipulation depends on.</div></div>
     </div>
@@ -592,19 +592,19 @@
         </div>
       </div>
       <div class="row">
-        <div class="when">2021 — 2024</div>
-        <div class="what">
-          <h3>A.S., Computer Science</h3>
-          <div class="org">University of the People, USA</div>
-          <div class="note">CGPA 4.00 / 4.00. President's List, 12 terms.</div>
-        </div>
-      </div>
-      <div class="row">
         <div class="when">2011 — 2014</div>
         <div class="what">
           <h3>B.Eng., Electrical Engineering &amp; Automation</h3>
           <div class="org">Anhui Agricultural University, Hefei, China</div>
           <div class="note">CGPA 3.65 / 4.00. Finished the four-year program in three years, the only student in the cohort to do so.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="when">2021 — 2024</div>
+        <div class="what">
+          <h3>A.S., Computer Science</h3>
+          <div class="org">University of the People, USA</div>
+          <div class="note">CGPA 4.00 / 4.00. President's List, 12 terms.</div>
         </div>
       </div>
     </div>
