@@ -1,2461 +1,630 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next mist use-motion" lang="en">
+<html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-  <meta name="google-site-verification" content="seORVxFFqewOpm2hivNcKwCa7p06oyf-edU6sBJXZhU" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-
-
-<meta name="description" content="Welcome to Zhiyao&#39;s blog.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Zhiyao&#39;s Blog">
-<meta property="og:url" content="https://zhiyaohe.github.io/index.html">
-<meta property="og:site_name" content="Zhiyao&#39;s Blog">
-<meta property="og:description" content="Welcome to Zhiyao&#39;s blog.">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="Zhiyao He">
-<meta name="twitter:card" content="summary">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '',
-    scheme: 'Mist',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Zhiyao He, Robotics & AI Researcher. Embodied AI, robot learning, and robotic manipulation.">
+<meta name="color-scheme" content="light dark">
+<title>Zhiyao He</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --bg:#f5f6f8;
+    --surface:#ffffff;
+    --surface-2:#fbfbfd;
+    --ink:#161a21;
+    --muted:#5b6472;
+    --faint:#8a93a3;
+    --line:#e3e6ec;
+    --line-strong:#d3d8e0;
+    --accent:#175a8c;
+    --accent-ink:#0f4c7a;
+    --accent-soft:rgba(23,90,140,.09);
+    --grid:rgba(23,90,140,.14);
+    --serif:"IBM Plex Serif", Georgia, "Times New Roman", serif;
+    --sans:"IBM Plex Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    --mono:"IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    --maxw:1060px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#0d1015;
+      --surface:#141821;
+      --surface-2:#11151d;
+      --ink:#e9ecf2;
+      --muted:#9aa4b3;
+      --faint:#6b7482;
+      --line:#242b36;
+      --line-strong:#303845;
+      --accent:#6aa6d6;
+      --accent-ink:#8fbfe4;
+      --accent-soft:rgba(106,166,214,.12);
+      --grid:rgba(106,166,214,.16);
     }
-  };
-</script>
+  }
+  :root[data-theme="dark"]{
+    --bg:#0d1015;
+    --surface:#141821;
+    --surface-2:#11151d;
+    --ink:#e9ecf2;
+    --muted:#9aa4b3;
+    --faint:#6b7482;
+    --line:#242b36;
+    --line-strong:#303845;
+    --accent:#6aa6d6;
+    --accent-ink:#8fbfe4;
+    --accent-soft:rgba(106,166,214,.12);
+    --grid:rgba(106,166,214,.16);
+  }
 
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  a{color:inherit}
+  h1,h2,h3{text-wrap:balance;margin:0}
 
+  /* ---------- header ---------- */
+  header.nav{
+    position:sticky;
+    top:env(safe-area-inset-top,0px);
+    z-index:20;
+    background:color-mix(in srgb, var(--bg) 82%, transparent);
+    backdrop-filter:saturate(1.4) blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:12px 24px;
+    display:flex;
+    align-items:center;
+    gap:18px;
+  }
+  .brand{
+    font-family:var(--mono);
+    font-size:12.5px;
+    font-weight:500;
+    text-transform:uppercase;
+    letter-spacing:.09em;
+    white-space:nowrap;
+  }
+  .brand .dot{color:var(--accent)}
+  nav.links{
+    margin-left:auto;
+    display:flex;
+    gap:4px;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+  }
+  nav.links a{
+    font-family:var(--mono);
+    font-size:12px;
+    text-decoration:none;
+    color:var(--muted);
+    padding:6px 9px;
+    border-radius:6px;
+    text-transform:uppercase;
+    letter-spacing:.09em;
+  }
+  nav.links a:hover{color:var(--ink);background:var(--accent-soft)}
+  nav.links a.cv{color:var(--accent);border:1px solid var(--line-strong)}
+  nav.links a.cv:hover{background:var(--accent-soft);color:var(--accent-ink)}
 
-  <link rel="canonical" href="https://zhiyaohe.github.io/"/>
+  /* ---------- layout ---------- */
+  main{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  section{padding-block:56px;border-top:1px solid var(--line);scroll-margin-top:70px}
+  section:first-of-type{border-top:none}
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--accent);
+    display:flex;align-items:center;gap:10px;
+    margin-bottom:22px;
+  }
+  .eyebrow::before{content:"";width:22px;height:1px;background:var(--accent);opacity:.55}
+  h2.section-title{
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:clamp(22px,3.4vw,28px);
+    letter-spacing:-.01em;
+    margin-bottom:4px;
+  }
 
+  /* ---------- hero ---------- */
+  .hero{padding-block:60px 58px;border-top:none}
+  .hero .kicker{
+    font-family:var(--mono);
+    font-size:13px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-bottom:20px;
+  }
+  .hero h1{
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:clamp(40px,8vw,68px);
+    line-height:1.02;
+    letter-spacing:-.02em;
+    margin-bottom:14px;
+  }
+  .hero .role{
+    font-size:clamp(18px,3.2vw,22px);
+    color:var(--ink);
+    font-weight:500;
+    margin-bottom:16px;
+  }
+  .hero .role .em{color:var(--accent)}
+  .hero .focus{
+    color:var(--muted);
+    max-width:60ch;
+    font-size:16.5px;
+    margin-bottom:28px;
+  }
+  .hero .focus b{color:var(--ink);font-weight:500}
+  .btnrow{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{
+    font-family:var(--mono);
+    font-size:13px;
+    text-decoration:none;
+    display:inline-flex;align-items:center;gap:8px;
+    padding:9px 14px;
+    border:1px solid var(--line-strong);
+    border-radius:8px;
+    background:var(--surface);
+    color:var(--ink);
+    transition:border-color .15s, background .15s, transform .05s;
+  }
+  .btn:hover{border-color:var(--accent);background:var(--accent-soft);color:var(--accent-ink)}
+  .btn:active{transform:translateY(1px)}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  .btn.primary:hover{background:var(--accent-ink);color:#fff}
+  .btn .ph{color:var(--faint);font-size:11px}
+  .btn svg{width:15px;height:15px;flex:none}
 
+  /* ---------- about ---------- */
+  .about p{max-width:66ch;font-size:17px;color:var(--ink)}
+  .about p + p{margin-top:14px}
+  .about .muted{color:var(--muted);font-size:15.5px}
 
+  /* ---------- research chips ---------- */
+  .interests{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:4px}
+  .interest{
+    border:1px solid var(--line);
+    background:var(--surface);
+    border-radius:10px;
+    padding:16px 18px;
+  }
+  .interest .n{font-family:var(--mono);font-size:12px;color:var(--faint)}
+  .interest .t{font-family:var(--serif);font-size:18px;font-weight:500;margin-top:6px}
+  .interest .d{color:var(--muted);font-size:14px;margin-top:4px}
 
+  /* ---------- projects ---------- */
+  .project{
+    border:1px solid var(--line);
+    background:var(--surface);
+    border-radius:14px;
+    overflow:hidden;
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 300px;
+  }
+  .project + .project{margin-top:22px}
+  .project .body{padding:26px 28px}
+  .project .ptag{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:.04em}
+  .project h3{
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:22px;
+    letter-spacing:-.01em;
+    margin:8px 0 4px;
+  }
+  .project .venue{font-family:var(--mono);font-size:12px;color:var(--faint);margin-bottom:14px}
+  .project .lede{color:var(--muted);font-size:15px;max-width:52ch;margin-bottom:18px}
+  .roles{display:flex;flex-direction:column;gap:12px}
+  .role-line .lab{
+    font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--faint);margin-bottom:3px;
+  }
+  .role-line .val{font-size:14.5px;color:var(--ink)}
+  .role-line .val .mut{color:var(--muted)}
+  .stack{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+  .chip{
+    font-family:var(--mono);font-size:11.5px;
+    color:var(--muted);
+    border:1px solid var(--line);
+    background:var(--surface-2);
+    padding:3px 8px;border-radius:6px;
+  }
+  /* placeholder media panel */
+  .media{
+    position:relative;
+    border-left:1px solid var(--line);
+    background:
+      radial-gradient(circle at 1px 1px, var(--grid) 1px, transparent 0) 0 0/16px 16px,
+      linear-gradient(180deg, var(--surface-2), var(--surface));
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:12px;
+    min-height:230px;
+    color:var(--muted);
+    text-align:center;
+    padding:20px;
+  }
+  .media .code{font-family:var(--mono);font-size:13px;letter-spacing:.06em;color:var(--ink)}
+  .media .ph{font-family:var(--mono);font-size:11px;color:var(--faint);letter-spacing:.06em}
+  .media svg{width:64px;height:64px;color:var(--accent);opacity:.85}
 
-  <title>Zhiyao's Blog</title>
-  
+  /* ---------- publications ---------- */
+  .pub{display:flex;gap:18px;padding:16px 0;border-top:1px solid var(--line)}
+  .pub:first-child{border-top:none}
+  .pub .yr{font-family:var(--mono);font-size:13px;color:var(--accent);min-width:44px;padding-top:2px}
+  .pub .meta{flex:1;min-width:0}
+  .pub .ttl{font-size:16px;color:var(--ink);font-weight:500}
+  .pub .auth{font-size:14px;color:var(--muted);margin-top:3px}
+  .pub .auth .me{color:var(--ink);border-bottom:1px solid var(--accent)}
+  .pub .venue{font-family:var(--mono);font-size:12.5px;color:var(--faint);margin-top:5px;display:flex;gap:12px;flex-wrap:wrap}
+  .pub .venue a{color:var(--accent);text-decoration:none}
+  .pub .venue a:hover{text-decoration:underline}
+  .pub .badge{
+    font-family:var(--mono);font-size:11px;color:var(--accent);
+    border:1px solid var(--line-strong);border-radius:5px;padding:1px 6px;
+  }
 
+  /* ---------- two-col rows (exp / edu) ---------- */
+  .rows{display:flex;flex-direction:column}
+  .row{
+    display:grid;grid-template-columns:150px minmax(0,1fr);
+    gap:20px;padding:18px 0;border-top:1px solid var(--line);
+  }
+  .row:first-child{border-top:none}
+  .row .when{font-family:var(--mono);font-size:12.5px;color:var(--faint);padding-top:3px}
+  .row .what h3{font-family:var(--sans);font-size:16.5px;font-weight:600;margin-bottom:2px}
+  .row .what .org{color:var(--accent);font-size:14.5px}
+  .row .what .note{color:var(--muted);font-size:14.5px;margin-top:6px}
+  .row .what .note li{margin-bottom:3px}
+  .row .what ul{margin:6px 0 0;padding-left:18px}
 
+  /* ---------- skills / honors ---------- */
+  .skills{display:grid;grid-template-columns:180px minmax(0,1fr);gap:14px 20px}
+  .skills .g{border-top:1px solid var(--line);padding-top:14px;font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
+  .skills .v{border-top:1px solid var(--line);padding-top:14px;display:flex;flex-wrap:wrap;gap:7px}
+  .honors{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+  .honors li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid var(--line);font-size:15px}
+  .honors li:first-child{border-top:none}
+  .honors .yr{font-family:var(--mono);font-size:12.5px;color:var(--faint);white-space:nowrap}
 
+  /* ---------- contact / footer ---------- */
+  .contact-card{
+    border:1px solid var(--line);border-radius:14px;background:var(--surface);
+    padding:30px 28px;display:flex;flex-wrap:wrap;align-items:center;gap:22px;justify-content:space-between;
+  }
+  .contact-card .lead{font-family:var(--serif);font-size:20px;font-weight:500}
+  .contact-card .sub{color:var(--muted);font-size:14.5px;margin-top:4px}
+  footer.foot{
+    max-width:var(--maxw);margin:0 auto;padding:26px 24px 40px;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
+    font-family:var(--mono);font-size:12px;color:var(--faint);
+    border-top:1px solid var(--line);
+  }
+  footer.foot a{color:var(--muted);text-decoration:none}
+  footer.foot a:hover{color:var(--accent)}
 
+  a.inline{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-soft)}
+  a.inline:hover{border-bottom-color:var(--accent)}
 
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
 
-
-
-<meta name="generator" content="Hexo 6.0.0">
-<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+  @media (max-width:820px){
+    .project{grid-template-columns:1fr}
+    .media{border-left:none;border-top:1px solid var(--line);order:-1;min-height:170px}
+    .interests{grid-template-columns:1fr}
+  }
+  @media (max-width:560px){
+    main,.nav-inner,footer.foot{padding-left:16px;padding-right:16px}
+    .row{grid-template-columns:1fr;gap:4px}
+    .row .when{padding-top:0}
+    .skills{grid-template-columns:1fr;gap:4px 0}
+    .skills .v{border-top:none;padding-top:6px;margin-bottom:8px}
+    nav.links a{padding:6px 7px}
+    .brand .full{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
 </head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <span class="brand"><span class="full">Zhiyao&nbsp;He</span><span class="dot"> · </span>robotics</span>
+    <nav class="links">
+      <a href="#about">about</a>
+      <a href="#research">research</a>
+      <a href="#projects">projects</a>
+      <a href="#publications">publications</a>
+      <a href="#experience">experience</a>
+      <a href="/blog/">blog</a>
+      <a class="cv" href="/files/Zhiyao_He_CV.pdf">CV</a>
+    </nav>
+  </div>
+</header>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+<main>
 
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Zhiyao's Blog</span>
-        <span class="logo-line-after"><i></i></span>
+  <section class="hero" id="top">
+    <div class="kicker">Robotics · Embodied AI · Robot Learning</div>
+    <h1>Zhiyao&nbsp;He</h1>
+    <div class="role">Robotics &amp; AI Researcher <span class="em">·</span> Embodied AI</div>
+    <p class="focus">I build robot systems that connect <b>perception</b>, <b>language models</b>, <b>planning</b> and <b>control</b>, from simulation to real hardware. I am looking to do a PhD in <b>robot learning</b>, focused on manipulation skills that hold up in the real world.</p>
+    <div class="btnrow">
+      <a class="btn primary" href="/files/Zhiyao_He_CV.pdf">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M5 21h14"/></svg>
+        Download CV
+      </a>
+      <a class="btn" href="https://github.com/zhiyaohe">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49l-.01-1.7c-2.78.62-3.37-1.37-3.37-1.37-.46-1.19-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.79-4.58 5.05.36.32.68.94.68 1.9l-.01 2.82c0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+        GitHub
+      </a>
+      <a class="btn" href="#" aria-label="Google Scholar (link to be added)">
+        Google Scholar <span class="ph">soon</span>
+      </a>
+      <a class="btn" href="https://www.linkedin.com/in/zhiyao-he-901283326/">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3 9.5h4V21H3V9.5Zm6 0h3.8v1.57h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.3c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21H9V9.5Z"/></svg>
+        LinkedIn
+      </a>
+      <a class="btn" href="mailto:zhiyaohe@outlook.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        Email
       </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Home
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            Categories
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archives
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            Tags
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            About
-          </a>
-        </li>
-      
-
-      
-        <li class="menu-item menu-item-search">
-          
-            <a href="javascript:;" class="popup-trigger">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            Search
-          </a>
-        </li>
-      
-    </ul>
-  
-
-  
-    <div class="site-search">
-      
-  <div class="popup search-popup local-search-popup">
-  <div class="local-search-header clearfix">
-    <span class="search-icon">
-      <i class="fa fa-search"></i>
-    </span>
-    <span class="popup-btn-close">
-      <i class="fa fa-times-circle"></i>
-    </span>
-    <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="Searching..." spellcheck="false"
-             type="text" id="local-search-input">
-    </div>
-  </div>
-  <div id="local-search-result"></div>
-</div>
-
-
-
-    </div>
-  
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhiyaohe.github.io/2023/05/07/CS2401-Learning-Journal-Unit-2-Requirements-Engineering-and-Software-Architecture/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Zhiyao's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2023/05/07/CS2401-Learning-Journal-Unit-2-Requirements-Engineering-and-Software-Architecture/" itemprop="url">CS2401 Learning Journal Unit 2 - Requirements Engineering and Software Architecture</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2023-05-07T17:04:17+08:00">
-                2023-05-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Software-Engineering/" itemprop="url" rel="index">
-                    <span itemprop="name">Software Engineering</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          CS2401 learning journal unit 2.
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2023/05/07/CS2401-Learning-Journal-Unit-2-Requirements-Engineering-and-Software-Architecture/">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-    
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhiyaohe.github.io/2023/05/07/CS2401-Programming-Assignment-Unit-2-Acceptance-Tests/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Zhiyao's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2023/05/07/CS2401-Programming-Assignment-Unit-2-Acceptance-Tests/" itemprop="url">CS2401 Programming Assignment Unit 2 - Acceptance Tests</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2023-05-07T15:43:27+08:00">
-                2023-05-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Software-Engineering/" itemprop="url" rel="index">
-                    <span itemprop="name">Software Engineering</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          CS2401 programming assignment unit 2.
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2023/05/07/CS2401-Programming-Assignment-Unit-2-Acceptance-Tests/">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-    
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhiyaohe.github.io/2023/05/06/CS2401-Discussion-Assignment-Unit-2-Strengths-and-Weaknesses-of-Users-and-Developers-in-Requirements-Elicitation-Activities/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Zhiyao's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2023/05/06/CS2401-Discussion-Assignment-Unit-2-Strengths-and-Weaknesses-of-Users-and-Developers-in-Requirements-Elicitation-Activities/" itemprop="url">CS2401 Discussion Assignment Unit 2 - Strengths and Weaknesses of Users and Developers in Requirements Elicitation Activities</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2023-05-06T08:08:57+08:00">
-                2023-05-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Software-Engineering/" itemprop="url" rel="index">
-                    <span itemprop="name">Software Engineering</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          CS2401 discussion assignment unit 2.
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2023/05/06/CS2401-Discussion-Assignment-Unit-2-Strengths-and-Weaknesses-of-Users-and-Developers-in-Requirements-Elicitation-Activities/">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-    
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhiyaohe.github.io/2023/05/05/CS2401-Learning-Journal-Unit-1-Software-Development-Life-Cycle-and-Software-Development-Models/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Zhiyao's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2023/05/05/CS2401-Learning-Journal-Unit-1-Software-Development-Life-Cycle-and-Software-Development-Models/" itemprop="url">CS2401 Learning Journal Unit 1 - Software Development Life Cycle and Software Development Models</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2023-05-05T21:49:48+08:00">
-                2023-05-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Software-Engineering/" itemprop="url" rel="index">
-                    <span itemprop="name">Software Engineering</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          CS2401 learning journal unit 1.
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2023/05/05/CS2401-Learning-Journal-Unit-1-Software-Development-Life-Cycle-and-Software-Development-Models/">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-    
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhiyaohe.github.io/2023/05/05/CS2401-Discussion-Assignment-Unit-1-The-Difference-between-developing-an-Aircraft-a-bridge-and-a-Word-Professor/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Zhiyao's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2023/05/05/CS2401-Discussion-Assignment-Unit-1-The-Difference-between-developing-an-Aircraft-a-bridge-and-a-Word-Professor/" itemprop="url">CS2401 Discussion Assignment Unit 1 - The Difference between Developing an Aircraft, a Bridge and a Word Processor</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2023-05-05T10:45:35+08:00">
-                2023-05-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Software-Engineering/" itemprop="url" rel="index">
-                    <span itemprop="name">Software Engineering</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          CS2401 discussion assignment unit 1.
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2023/05/05/CS2401-Discussion-Assignment-Unit-1-The-Difference-between-developing-an-Aircraft-a-bridge-and-a-Word-Professor/">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-    
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhiyaohe.github.io/2022/04/05/Some-GUI-Programming/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Zhiyao's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2022/04/05/Some-GUI-Programming/" itemprop="url">CS1103 Programming Assignment Unit 8 - Some GUI Programming</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-04-05T16:47:01+08:00">
-                2022-04-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index">
-                    <span itemprop="name">Java</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          CS1103 Programming Assignment Unit 8.
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2022/04/05/Some-GUI-Programming/">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-    
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhiyaohe.github.io/2022/04/05/The-advantages-of-using-Java-GUI/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Zhiyao's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2022/04/05/The-advantages-of-using-Java-GUI/" itemprop="url">CS1103 Discussion Assignment Unit 8 - The advantages of using Java GUI</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-04-05T16:27:15+08:00">
-                2022-04-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index">
-                    <span itemprop="name">Java</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          CS1103 Discussion Assignment Unit 8.
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2022/04/05/The-advantages-of-using-Java-GUI/">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-    
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhiyaohe.github.io/2022/04/05/CS1103-Learning-Journal-Unit-7-Actions-and-Buttons-Complex-Components-and-MVC/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Zhiyao's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2022/04/05/CS1103-Learning-Journal-Unit-7-Actions-and-Buttons-Complex-Components-and-MVC/" itemprop="url">CS1103 Learning Journal Unit 7 - Actions and Buttons, Complex Components and MVC</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-04-05T11:00:52+08:00">
-                2022-04-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index">
-                    <span itemprop="name">Java</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          CS1103 Learning Journal Unit 7.
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2022/04/05/CS1103-Learning-Journal-Unit-7-Actions-and-Buttons-Complex-Components-and-MVC/">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-    
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhiyaohe.github.io/2022/04/05/A-stopwatch/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Zhiyao's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2022/04/05/A-stopwatch/" itemprop="url">CS1103 Programming Assignment Unit 7 - A stopwatch</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-04-05T10:25:14+08:00">
-                2022-04-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index">
-                    <span itemprop="name">Java</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          CS1103 Programming Assignment Unit 7.
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2022/04/05/A-stopwatch/">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-    
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhiyaohe.github.io/2022/04/04/A-web-server/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Zhiyao's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2022/04/04/A-web-server/" itemprop="url">CS1103 Programming Assignment Unit 7 - A web server</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-04-04T18:38:42+08:00">
-                2022-04-04
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index">
-                    <span itemprop="name">Java</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          CS1103 Programming Assignment Unit 7.
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2022/04/04/A-web-server/">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-    
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/">》</a>
-  </nav>
+  <section id="about" class="about">
+    <div class="eyebrow">About</div>
+    <p>I am an AI engineer working on embodied AI. I build robot pipelines that connect perception, language models, planning and control, taking systems from simulation in Gazebo, MuJoCo and Isaac Gym to real hardware.</p>
+    <p>My most recent system is voice-controlled navigation and manipulation on the Unitree Go2-W quadruped with a D1 arm. Alongside that I build offline, on-device voice agents for service robots. My goal is a PhD in robot learning, and specifically how robots can acquire manipulation skills that transfer reliably to the real world.</p>
+    <p class="muted">Based in the Hengqin &amp; Macau area. M.S. from Hohai University; A.S. in Computer Science from University of the People (GPA 4.00). TOEFL 100/120, CEFR C1.</p>
+  </section>
 
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+  <section id="research">
+    <div class="eyebrow">Research Interests</div>
+    <h2 class="section-title">Where I want to go deeper</h2>
+    <div class="interests" style="margin-top:22px">
+      <div class="interest"><div class="n">01</div><div class="t">Robot Learning &amp; Reinforcement Learning</div><div class="d">Learning locomotion and manipulation policies in simulation and transferring them to hardware.</div></div>
+      <div class="interest"><div class="n">02</div><div class="t">Vision-Language-Action Models</div><div class="d">Grounding language and perception into robot actions for open-ended tasks.</div></div>
+      <div class="interest"><div class="n">03</div><div class="t">Manipulation &amp; Grasping</div><div class="d">Reliable grasping and motion planning under real-world perception noise.</div></div>
+      <div class="interest"><div class="n">04</div><div class="t">Simulation, SLAM &amp; Navigation</div><div class="d">Building the sim-to-real and navigation stack that manipulation depends on.</div></div>
     </div>
-  </div>
+  </section>
 
-  <aside id="sidebar" class="sidebar">
-    
-      <div id="sidebar-dimmer"></div>
-    
-    <div class="sidebar-inner">
+  <section id="projects">
+    <div class="eyebrow">Selected Projects</div>
+    <h2 class="section-title">Systems I have built end to end</h2>
+    <div style="margin-top:24px"></div>
 
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image"
-                src="/images/avatar.jpg"
-                alt="" />
-            
-              <p class="site-author-name" itemprop="name"></p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">57</span>
-                  <span class="site-state-item-name">posts</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">categories</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">20</span>
-                  <span class="site-state-item-name">tags</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/zhiyaohe" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://twitter.com/NoahZhiyaoHe" target="_blank" title="Twitter">
-                      
-                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
-                  </span>
-                
-            </div>
-          
-
-          
-          
-
-          
-          
-
-          
-
+    <article class="project">
+      <div class="body">
+        <div class="ptag">Perception + Manipulation · my work</div>
+        <h3>Voice-Controlled Navigation &amp; Manipulation on Unitree Go2-W</h3>
+        <div class="venue">Go2-W quadruped + D1 arm · team project with Macau Millennium College · ROS 2</div>
+        <p class="lede">A quadruped that hears a spoken request, navigates to a target, and grasps it. I owned the perception and manipulation halves of the system.</p>
+        <div class="roles">
+          <div class="role-line"><div class="lab">Perception</div><div class="val">Fine-tuned <b>YOLO11</b> by transfer learning to detect a specific bottle; a wrist-mounted depth camera and 2D-to-3D transform locate the target in the world frame.</div></div>
+          <div class="role-line"><div class="lab">Manipulation</div><div class="val">A grasping pipeline on <b>MoveIt 2</b>: KDL inverse kinematics, OMPL / RRTConnect planning, FCL collision checking, planning a collision-free path and executing the grasp.</div></div>
+          <div class="role-line"><div class="lab">Integration</div><div class="val"><span class="mut">Teammates built SLAM navigation and the ASR / LLM / TTS pipeline; we defined the interfaces and integrated the full system, tested in MuJoCo and Gazebo and on the real robot.</span></div></div>
         </div>
-      </section>
+        <div class="stack">
+          <span class="chip">ROS 2</span><span class="chip">YOLO11</span><span class="chip">RealSense</span><span class="chip">MoveIt 2</span><span class="chip">KDL</span><span class="chip">OMPL / RRTConnect</span><span class="chip">FCL</span><span class="chip">MuJoCo</span><span class="chip">Gazebo</span>
+        </div>
+      </div>
+      <div class="media">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="13" height="9" rx="1.5"/><circle cx="6.5" cy="19.5" r="1.6"/><circle cx="12.5" cy="19.5" r="1.6"/><path d="M16 11h3l2 3v3h-4"/><path d="M8 8V5.5M8 5.5 6 4M8 5.5l2-1.5"/></svg>
+        <div class="code">GO2-W · D1</div>
+        <div class="ph">photo / demo GIF</div>
+      </div>
+    </article>
 
-      
+    <article class="project">
+      <div class="body">
+        <div class="ptag">Offline on-device agent · my work</div>
+        <h3>Offline Voice RAG Assistant on AgiBot Lingxi X2</h3>
+        <div class="venue">In-store retail assistant · industry project for CTM (Macau Telecom) · runs fully offline on Jetson</div>
+        <p class="lede">Customers ask about products, plans and pricing by voice; the robot answers with no network dependency, so it stays reliable during live events.</p>
+        <div class="roles">
+          <div class="role-line"><div class="lab">Pipeline</div><div class="val">A bridge node streams the X2's microphone audio to a local <b>FastAPI</b> backend running local ASR (<b>FunASR / Paraformer-zh</b>), a local LLM (<b>Qwen2.5-7B</b> via Ollama), and <b>pgvector</b> RAG over a PostgreSQL product database.</div></div>
+          <div class="role-line"><div class="lab">Output</div><div class="val"><span class="mut">Answers are spoken through the X2's built-in offline TTS. An online variant integrates with third-party business systems to act on live backend data.</span></div></div>
+        </div>
+        <div class="stack">
+          <span class="chip">Jetson</span><span class="chip">FastAPI</span><span class="chip">FunASR</span><span class="chip">Qwen2.5-7B</span><span class="chip">Ollama</span><span class="chip">PostgreSQL</span><span class="chip">pgvector</span><span class="chip">RAG</span><span class="chip">offline TTS</span>
+        </div>
+      </div>
+      <div class="media">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="3" width="10" height="13" rx="4"/><path d="M12 16v3m-4 2h8"/><path d="M9 8h6M9.5 11h5"/></svg>
+        <div class="code">LINGXI X2</div>
+        <div class="ph">photo / demo GIF</div>
+      </div>
+    </article>
 
-      
-	  
+    <article class="project">
+      <div class="body">
+        <div class="ptag">RL locomotion + bring-up · my work</div>
+        <h3>RL Locomotion &amp; Robot Bring-up on the AKI Humanoid</h3>
+        <div class="venue">Company education product · team reproduction of Unitree's open-source Qmini</div>
+        <p class="lede">Bringing a reproduced humanoid to life and teaching it to walk in simulation, then setting up the training stack the team builds on.</p>
+        <div class="roles">
+          <div class="role-line"><div class="lab">Bring-up</div><div class="val">Brought up and debugged the <b>control system</b> and <b>power system</b> on the reproduced robot.</div></div>
+          <div class="role-line"><div class="lab">Learning</div><div class="val">Ran <b>reinforcement-learning locomotion</b> training in Isaac Gym; set up Gazebo, MuJoCo and Isaac Gym environments for AKI and the Unitree G1 / R1 humanoids.</div></div>
+        </div>
+        <div class="stack">
+          <span class="chip">Isaac Gym</span><span class="chip">Reinforcement Learning</span><span class="chip">MuJoCo</span><span class="chip">Gazebo</span><span class="chip">Unitree G1 / R1</span><span class="chip">control systems</span>
+        </div>
+      </div>
+      <div class="media">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.2"/><path d="M12 7.2V14m0 0-3 6m3-6 3 6M7 10.5l5-1.5 5 1.5"/></svg>
+        <div class="code">AKI · G1 / R1</div>
+        <div class="ph">photo / demo GIF</div>
+      </div>
+    </article>
+  </section>
+
+  <section id="publications">
+    <div class="eyebrow">Publications &amp; Patent</div>
+    <h2 class="section-title">Earlier research record</h2>
+    <p class="about" style="color:var(--muted);font-size:15px;max-width:60ch;margin:10px 0 20px">My published work is from an earlier machine-learning and hydrology research period; it reflects a full research pipeline from data to peer review.</p>
+    <div class="pub">
+      <div class="yr">2019</div>
+      <div class="meta">
+        <div class="ttl">Runoff Prediction Method Based on Adaptive Elman Neural Network</div>
+        <div class="auth">Chenming Li, Lei Zhu, <span class="me">Zhiyao He</span>, Hongmin Gao, Yao Yang, Dan Yao, Xiaoyu Qu</div>
+        <div class="venue"><span class="badge">Water</span> <a href="https://www.mdpi.com/2073-4441/11/6/1113">Paper</a></div>
+      </div>
     </div>
-  </aside>
-
-
-        
+    <div class="pub">
+      <div class="yr">2017</div>
+      <div class="meta">
+        <div class="ttl">Annual Average Runoff Ensemble Forecast for Jinping I-Stage Hydropower Station Based on Elman Neural Network</div>
+        <div class="auth"><span class="me">Zhiyao He</span>, Mingxiang Yang, Hao Wang, et al.</div>
+        <div class="venue"><span class="badge">Water Resources and Power</span></div>
       </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; 2021 &mdash; <span itemprop="copyrightYear">2026</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder"><a target="_blank" href="https://zhiyaohe.github.io">Zhiyao's   Blog</a></span>
-
-  
-</div>
-
-
-
-
-
-
-
-
-        
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="site-pv">
-      <i class="fa fa-eye"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      Views
-    </span>
-  
-  
-  
-    <span class="site-uv">
-      <i class="fa fa-eye"></i>
-      
-    </span>
-  
-
-</div>
-
-
-
-
-
-
-
-
-        
+    </div>
+    <div class="pub">
+      <div class="yr">2020</div>
+      <div class="meta">
+        <div class="ttl">Medium- and Long-term Runoff Forecasting Method Based on Mutual Information, Kernel PCA, and Elman Neural Network</div>
+        <div class="auth"><span class="me">Zhiyao He</span> · Chinese National Invention Patent, granted 2020</div>
+        <div class="venue"><span class="badge">Patent</span> CN107463993B <a href="https://patents.google.com/patent/CN107463993A/en">Google Patents</a></div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
+  <section id="experience">
+    <div class="eyebrow">Experience</div>
+    <h2 class="section-title">Where I have worked</h2>
+    <div class="rows" style="margin-top:20px">
+      <div class="row">
+        <div class="when">Mar 2026 — Present</div>
+        <div class="what">
+          <h3>AI Engineer</h3>
+          <div class="org">WellWin Technology · Hengqin &amp; Macau</div>
+          <ul class="note">
+            <li>Built the perception and grasping pipelines for the Go2-W voice manipulation system.</li>
+            <li>Built offline and online voice agents for the AgiBot Lingxi X2 on Jetson.</li>
+            <li>Set up simulation and ran RL locomotion training for AKI and Unitree G1 / R1 humanoids.</li>
+          </ul>
+        </div>
       </div>
-    
-
-    
-
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    var isXml = true;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length === 0) {
-      search_path = "search.xml";
-    } else if (/json$/i.test(search_path)) {
-      isXml = false;
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
-
-    var onPopupClose = function (e) {
-      $('.popup').hide();
-      $('#local-search-input').val('');
-      $('.search-result-list').remove();
-      $('#no-result').remove();
-      $(".local-search-pop-overlay").remove();
-      $('body').css('overflow', '');
-    }
-
-    function proceedsearch() {
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
-        .css('overflow', 'hidden');
-      $('.search-popup-overlay').click(onPopupClose);
-      $('.popup').toggle();
-      var $localSearchInput = $('#local-search-input');
-      $localSearchInput.attr("autocapitalize", "none");
-      $localSearchInput.attr("autocorrect", "off");
-      $localSearchInput.focus();
-    }
-
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-      'use strict';
-
-      // start loading animation
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
-          '<div id="search-loading-icon">' +
-          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
-          '</div>' +
-          '</div>')
-        .css('overflow', 'hidden');
-      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
-
-      $.ajax({
-        url: path,
-        dataType: isXml ? "xml" : "json",
-        async: true,
-        success: function(res) {
-          // get the contents from search data
-          isfetched = true;
-          $('.popup').detach().appendTo('.header-inner');
-          var datas = isXml ? $("entry", res).map(function() {
-            return {
-              title: $("title", this).text(),
-              content: $("content",this).text(),
-              url: $("url" , this).text()
-            };
-          }).get() : res;
-          var input = document.getElementById(search_id);
-          var resultContent = document.getElementById(content_id);
-          var inputEventFunction = function() {
-            var searchText = input.value.trim().toLowerCase();
-            var keywords = searchText.split(/[\s\-]+/);
-            if (keywords.length > 1) {
-              keywords.push(searchText);
-            }
-            var resultItems = [];
-            if (searchText.length > 0) {
-              // perform local searching
-              datas.forEach(function(data) {
-                var isMatch = false;
-                var hitCount = 0;
-                var searchTextCount = 0;
-                var title = data.title.trim();
-                var titleInLowerCase = title.toLowerCase();
-                var content = data.content.trim().replace(/<[^>]+>/g,"");
-                var contentInLowerCase = content.toLowerCase();
-                var articleUrl = decodeURIComponent(data.url);
-                var indexOfTitle = [];
-                var indexOfContent = [];
-                // only match articles with not empty titles
-                if(title != '') {
-                  keywords.forEach(function(keyword) {
-                    function getIndexByWord(word, text, caseSensitive) {
-                      var wordLen = word.length;
-                      if (wordLen === 0) {
-                        return [];
-                      }
-                      var startPosition = 0, position = [], index = [];
-                      if (!caseSensitive) {
-                        text = text.toLowerCase();
-                        word = word.toLowerCase();
-                      }
-                      while ((position = text.indexOf(word, startPosition)) > -1) {
-                        index.push({position: position, word: word});
-                        startPosition = position + wordLen;
-                      }
-                      return index;
-                    }
-
-                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
-                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
-                  });
-                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
-                    isMatch = true;
-                    hitCount = indexOfTitle.length + indexOfContent.length;
-                  }
-                }
-
-                // show search results
-
-                if (isMatch) {
-                  // sort index by position of keyword
-
-                  [indexOfTitle, indexOfContent].forEach(function (index) {
-                    index.sort(function (itemLeft, itemRight) {
-                      if (itemRight.position !== itemLeft.position) {
-                        return itemRight.position - itemLeft.position;
-                      } else {
-                        return itemLeft.word.length - itemRight.word.length;
-                      }
-                    });
-                  });
-
-                  // merge hits into slices
-
-                  function mergeIntoSlice(text, start, end, index) {
-                    var item = index[index.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    var hits = [];
-                    var searchTextCountInSlice = 0;
-                    while (position + word.length <= end && index.length != 0) {
-                      if (word === searchText) {
-                        searchTextCountInSlice++;
-                      }
-                      hits.push({position: position, length: word.length});
-                      var wordEnd = position + word.length;
-
-                      // move to next position of hit
-
-                      index.pop();
-                      while (index.length != 0) {
-                        item = index[index.length - 1];
-                        position = item.position;
-                        word = item.word;
-                        if (wordEnd > position) {
-                          index.pop();
-                        } else {
-                          break;
-                        }
-                      }
-                    }
-                    searchTextCount += searchTextCountInSlice;
-                    return {
-                      hits: hits,
-                      start: start,
-                      end: end,
-                      searchTextCount: searchTextCountInSlice
-                    };
-                  }
-
-                  var slicesOfTitle = [];
-                  if (indexOfTitle.length != 0) {
-                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
-                  }
-
-                  var slicesOfContent = [];
-                  while (indexOfContent.length != 0) {
-                    var item = indexOfContent[indexOfContent.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    // cut out 100 characters
-                    var start = position - 20;
-                    var end = position + 80;
-                    if(start < 0){
-                      start = 0;
-                    }
-                    if (end < position + word.length) {
-                      end = position + word.length;
-                    }
-                    if(end > content.length){
-                      end = content.length;
-                    }
-                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
-                  }
-
-                  // sort slices in content by search text's count and hits' count
-
-                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
-                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
-                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
-                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
-                      return sliceRight.hits.length - sliceLeft.hits.length;
-                    } else {
-                      return sliceLeft.start - sliceRight.start;
-                    }
-                  });
-
-                  // select top N slices in content
-
-                  var upperBound = parseInt('1');
-                  if (upperBound >= 0) {
-                    slicesOfContent = slicesOfContent.slice(0, upperBound);
-                  }
-
-                  // highlight title and content
-
-                  function highlightKeyword(text, slice) {
-                    var result = '';
-                    var prevEnd = slice.start;
-                    slice.hits.forEach(function (hit) {
-                      result += text.substring(prevEnd, hit.position);
-                      var end = hit.position + hit.length;
-                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
-                      prevEnd = end;
-                    });
-                    result += text.substring(prevEnd, slice.end);
-                    return result;
-                  }
-
-                  var resultItem = '';
-
-                  if (slicesOfTitle.length != 0) {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
-                  } else {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
-                  }
-
-                  slicesOfContent.forEach(function (slice) {
-                    resultItem += "<a href='" + articleUrl + "'>" +
-                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
-                      "...</p>" + "</a>";
-                  });
-
-                  resultItem += "</li>";
-                  resultItems.push({
-                    item: resultItem,
-                    searchTextCount: searchTextCount,
-                    hitCount: hitCount,
-                    id: resultItems.length
-                  });
-                }
-              })
-            };
-            if (keywords.length === 1 && keywords[0] === "") {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
-            } else if (resultItems.length === 0) {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
-            } else {
-              resultItems.sort(function (resultLeft, resultRight) {
-                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
-                  return resultRight.searchTextCount - resultLeft.searchTextCount;
-                } else if (resultLeft.hitCount !== resultRight.hitCount) {
-                  return resultRight.hitCount - resultLeft.hitCount;
-                } else {
-                  return resultRight.id - resultLeft.id;
-                }
-              });
-              var searchResultList = '<ul class=\"search-result-list\">';
-              resultItems.forEach(function (result) {
-                searchResultList += result.item;
-              })
-              searchResultList += "</ul>";
-              resultContent.innerHTML = searchResultList;
-            }
-          }
-
-          if ('auto' === 'auto') {
-            input.addEventListener('input', inputEventFunction);
-          } else {
-            $('.search-icon').click(inputEventFunction);
-            input.addEventListener('keypress', function (event) {
-              if (event.keyCode === 13) {
-                inputEventFunction();
-              }
-            });
-          }
-
-          // remove loading animation
-          $(".local-search-pop-overlay").remove();
-          $('body').css('overflow', '');
-
-          proceedsearch();
-        }
-      });
-    }
-
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched === false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-    });
-
-    $('.popup-btn-close').click(onPopupClose);
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-    $(document).on('keyup', function (event) {
-      var shouldDismissSearchPopup = event.which === 27 &&
-        $('.search-popup').is(':visible');
-      if (shouldDismissSearchPopup) {
-        onPopupClose();
-      }
-    });
-  </script>
-
-
-
-
-
-  
-
-  
-
-  
-<script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
-
-
-  
-  
-
-  
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  
-
-
-  
-
-  
-  <script type="text/javascript" src="/js/src/exturl.js?v=5.1.4"></script>
-
-
-  
-
+      <div class="row">
+        <div class="when">Jul 2019 — Feb 2026</div>
+        <div class="what">
+          <h3>Independent Study &amp; Research</h3>
+          <div class="org">Nanjing, China</div>
+          <div class="note">Completed a full CS degree at University of the People (GPA 4.00); second journal paper published and invention patent granted during this period. Admitted to the M.Sc. Data Science at Trinity College Dublin (2025), declined for funding reasons.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="when">Jul 2018 — Jun 2019</div>
+        <div class="what">
+          <h3>Software Engineer</h3>
+          <div class="org">Huawei Technologies · Nanjing R&amp;D Institute</div>
+          <div class="note">Intelligent security systems team (face, vehicle and other recognition products): system development, deployment and feature validation; cross-team debugging and system-level testing.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="when">Jun 2016 — Jun 2017</div>
+        <div class="what">
+          <h3>Research Intern</h3>
+          <div class="org">China Institute of Water Resources and Hydropower Research · Beijing</div>
+          <div class="note">Built a complete runoff-prediction pipeline: data collection and cleaning, feature engineering, model development, tuning, training and evaluation. Produced two journal papers and one patent.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="eyebrow">Education</div>
+    <h2 class="section-title">Degrees</h2>
+    <div class="rows" style="margin-top:20px">
+      <div class="row">
+        <div class="when">2015 — 2018</div>
+        <div class="what">
+          <h3>M.S., Signal &amp; Information Processing</h3>
+          <div class="org">Hohai University, Nanjing</div>
+          <div class="note">Outstanding Graduate Student (research-based degree). Thesis on machine learning for runoff forecasting.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="when">2021 — 2024</div>
+        <div class="what">
+          <h3>A.S., Computer Science</h3>
+          <div class="org">University of the People, USA</div>
+          <div class="note">CGPA 4.00 / 4.00. President's List, 12 terms.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="when">2011 — 2014</div>
+        <div class="what">
+          <h3>B.Eng., Electrical Engineering &amp; Automation</h3>
+          <div class="org">Anhui Agricultural University</div>
+          <div class="note">CGPA 3.65 / 4.00. Finished the four-year program in three years, the only student in the cohort to do so.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="eyebrow">Technical Skills</div>
+    <div class="skills">
+      <div class="g">Programming &amp; systems</div>
+      <div class="v"><span class="chip">Python</span><span class="chip">C++</span><span class="chip">Linux</span><span class="chip">Docker</span><span class="chip">Git</span></div>
+      <div class="g">Robotics</div>
+      <div class="v"><span class="chip">ROS / ROS 2</span><span class="chip">MoveIt 2</span><span class="chip">Nav2</span><span class="chip">Gazebo</span><span class="chip">MuJoCo</span><span class="chip">Isaac Gym</span><span class="chip">SLAM</span><span class="chip">Navigation</span><span class="chip">Perception</span></div>
+      <div class="g">AI &amp; robot learning</div>
+      <div class="v"><span class="chip">PyTorch</span><span class="chip">Machine Learning</span><span class="chip">Computer Vision</span><span class="chip">Reinforcement Learning</span><span class="chip">LLMs</span><span class="chip">RAG</span><span class="chip">VLA</span></div>
+      <div class="g">Robot platforms</div>
+      <div class="v"><span class="chip">Unitree G1</span><span class="chip">Unitree B2 / Go2 / Go2-W</span><span class="chip">AgiBot Lingxi X2</span></div>
+    </div>
+  </section>
+
+  <section id="honors">
+    <div class="eyebrow">Honors &amp; Awards</div>
+    <ul class="honors">
+      <li><span>President's List, University of the People (12 terms)</span><span class="yr">2021–2024</span></li>
+      <li><span>Outstanding Contribution Award, Huawei Nanjing R&amp;D Institute</span><span class="yr">2019</span></li>
+      <li><span>Outstanding Graduate Student, Hohai University</span><span class="yr">2017</span></li>
+      <li><span>Hohai University Scholarship</span><span class="yr">2015–2017</span></li>
+      <li><span>Anhui Agricultural University Scholarship</span><span class="yr">2012</span></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <div class="eyebrow">Contact</div>
+    <div class="contact-card">
+      <div>
+        <div class="lead">Open to PhD positions in robot learning.</div>
+        <div class="sub">Happy to talk about manipulation, sim-to-real, and on-device robot agents.</div>
+      </div>
+      <div class="btnrow">
+        <a class="btn primary" href="mailto:zhiyaohe@outlook.com">zhiyaohe@outlook.com</a>
+        <a class="btn" href="https://github.com/zhiyaohe">GitHub</a>
+        <a class="btn" href="/files/Zhiyao_He_CV.pdf">CV</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <span>© 2026 Zhiyao He</span>
+  <span>Robotics &amp; AI Researcher · <a href="/blog/">Blog / Notes</a></span>
+</footer>
 </body>
 </html>
