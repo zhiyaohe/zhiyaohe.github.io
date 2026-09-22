@@ -297,6 +297,11 @@
   }
   .media > video,.media > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
   .media.fit>video{object-fit:contain}
+  /* full-width featured card: landscape image shown whole */
+  .project.feature{grid-template-columns:1fr}
+  .project.feature .media{order:-1;border-left:none;border-bottom:1px solid var(--line);min-height:0;aspect-ratio:auto;padding:0;background:#0d1015}
+  .project.feature .media > img{position:static;inset:auto;width:100%;height:auto;object-fit:contain;display:block}
+  .project.feature .media .cap{padding:26px 14px 10px}
   .media .cap{position:absolute;left:0;right:0;bottom:0;z-index:2;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;padding:22px 12px 9px;background:linear-gradient(transparent,rgba(0,0,0,.62))}
   .media .code{position:relative;z-index:2}
   .media .code{font-family:var(--mono);font-size:13px;letter-spacing:.06em;color:var(--ink)}
@@ -517,7 +522,7 @@
         <span class="cap">Real robot · capstone demo</span>
       </div>
     </article>
-    <article class="project">
+    <article class="project feature">
       <div class="body">
         <div class="ptag">Competition design · my work</div>
         <h3>Humanoid Robot Task Challenge, MYAIR 2027</h3>
@@ -533,8 +538,7 @@
         </div>
       </div>
       <div class="media">
-        <img src="/images/myair.jpg" alt="MYAIR humanoid robot task challenge, robot shooting a ball into a QR-coded grid">
-        <span class="cap">MYAIR 2027 · Macao Science Center</span>
+        <img src="/images/myair.jpg" alt="MYAIR 2027 humanoid robot task challenge: robot shooting a ball into a QR-coded 3x3 grid, with event banner">
       </div>
     </article>
   </section>
