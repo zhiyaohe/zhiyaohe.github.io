@@ -391,6 +391,7 @@
     <span class="brand"><span class="full">Zhiyao&nbsp;He</span></span>
     <nav class="links">
       <a href="#projects">research</a>
+      <a href="#teaching">teaching</a>
       <a href="#experience">experience</a>
     </nav>
   </div>
@@ -451,7 +452,7 @@
         <div class="roles">
           <div class="role-line"><div class="lab">Perception</div><div class="val">Fine-tuned YOLO11 by transfer learning to detect a specific bottle; a wrist-mounted depth camera and 2D-to-3D transform locate the target in the world frame.</div></div>
           <div class="role-line"><div class="lab">Manipulation</div><div class="val">A grasping pipeline on MoveIt 2: KDL inverse kinematics, OMPL / RRTConnect planning, FCL collision checking, planning a collision-free path and executing the grasp.</div></div>
-          <div class="role-line"><div class="lab">Integration</div><div class="val"><span class="mut">Teammates built SLAM navigation and the ASR / LLM / TTS pipeline; we defined the interfaces and integrated the full system, tested in MuJoCo and Gazebo and on the real robot.</span></div></div>
+          <div class="role-line"><div class="lab">Integration</div><div class="val"><span class="mut">Teammates built SLAM navigation and the ASR / LLM / OpenClaw / TTS pipeline; we defined the interfaces and integrated the full system, tested in MuJoCo and Gazebo and on the real robot.</span></div></div>
         </div>
         <div class="stack">
           <span class="chip">ROS 2</span><span class="chip">YOLO11</span><span class="chip">RealSense</span><span class="chip">MoveIt 2</span><span class="chip">KDL</span><span class="chip">OMPL / RRTConnect</span><span class="chip">FCL</span><span class="chip">MuJoCo</span><span class="chip">Gazebo</span>
@@ -465,21 +466,21 @@
 
     <article class="project">
       <div class="body">
-        <div class="ptag">Offline on-device agent · my work</div>
-        <h3>Offline Voice RAG Assistant on AgiBot Lingxi X2</h3>
-        <div class="venue">In-store retail assistant · industry project for CTM (Macau Telecom) · runs fully offline on Jetson</div>
-        <p class="lede">Customers ask about products, plans and pricing by voice; the robot answers with no network dependency, so it stays reliable during live events.</p>
+        <div class="ptag">Voice agent, offline + online · my work</div>
+        <h3>Retail Voice Agent on AgiBot Lingxi X2</h3>
+        <div class="venue">In-store retail assistant · industry project for CTM (Macau Telecom) · offline and online versions</div>
+        <p class="lede">Customers ask about products, plans and pricing by voice. Built in two versions: an offline one for sites with unreliable network, and an online one with a Cantonese voice for Macau customers.</p>
         <div class="roles">
-          <div class="role-line"><div class="lab">Pipeline</div><div class="val">A bridge node streams the X2's microphone audio to a local FastAPI backend running local ASR (FunASR / Paraformer-zh), a local LLM (Qwen2.5-7B via Ollama), and pgvector RAG over a PostgreSQL product database.</div></div>
-          <div class="role-line"><div class="lab">Output</div><div class="val"><span class="mut">Answers are spoken through the X2's built-in offline TTS. An online variant integrates with third-party business systems to act on live backend data.</span></div></div>
+          <div class="role-line"><div class="lab">Offline version</div><div class="val">Runs on a Jetson. A bridge node streams the X2's microphone audio to a local FastAPI backend running FunASR / Paraformer-zh ASR, Qwen2.5-7B via Ollama, pgvector RAG over a PostgreSQL product database, and Piper TTS.</div></div>
+          <div class="role-line"><div class="lab">Online version</div><div class="val">Built with the Lingxi AgentSDK, using DeepSeek as the LLM and MiniMax TTS with a Cantonese voice. It draws on three knowledge sources: the Lingxi platform knowledge base, the local RAG system, and third-party business systems such as CTM's.</div></div>
         </div>
         <div class="stack">
-          <span class="chip">Jetson</span><span class="chip">FastAPI</span><span class="chip">FunASR</span><span class="chip">Qwen2.5-7B</span><span class="chip">Ollama</span><span class="chip">PostgreSQL</span><span class="chip">pgvector</span><span class="chip">RAG</span><span class="chip">offline TTS</span>
+          <span class="chip">Jetson</span><span class="chip">FastAPI</span><span class="chip">FunASR</span><span class="chip">Qwen2.5-7B</span><span class="chip">Ollama</span><span class="chip">PostgreSQL</span><span class="chip">pgvector</span><span class="chip">RAG</span><span class="chip">Piper TTS</span><span class="chip">Lingxi AgentSDK</span><span class="chip">DeepSeek</span><span class="chip">MiniMax TTS</span>
         </div>
       </div>
       <div class="media">
         <video autoplay muted loop playsinline preload="metadata" src="/videos/x2.mp4"></video>
-        <span class="cap">Real robot · voice assistant</span>
+        <span class="cap">Real robot · voice agent</span>
       </div>
     </article>
 
@@ -502,6 +503,11 @@
         <span class="cap">Simulation</span>
       </div>
     </article>
+
+  </section>
+
+  <section id="teaching">
+    <h2 class="section-h">Teaching &amp; Outreach</h2>
     <article class="project">
       <div class="body">
         <div class="ptag">Curriculum + real-robot ROS 2 · my work</div>
@@ -558,19 +564,19 @@
     <h2 class="section-h">Publications &amp; Patent</h2>
     <p class="about" style="color:var(--muted);font-size:15px;max-width:60ch;margin:10px 0 20px">My published work is from an earlier machine-learning and hydrology research period; it reflects a full research pipeline from data to peer review.</p>
     <div class="pub">
-      <div class="yr">2019</div>
-      <div class="meta">
-        <div class="ttl">Runoff Prediction Method Based on Adaptive Elman Neural Network</div>
-        <div class="auth">Chenming Li, Lei Zhu, <span class="me">Zhiyao He</span>, Hongmin Gao, Yao Yang, Dan Yao, Xiaoyu Qu</div>
-        <div class="venue"><span class="badge">Water</span> <a href="https://www.mdpi.com/2073-4441/11/6/1113">Paper</a></div>
-      </div>
-    </div>
-    <div class="pub">
       <div class="yr">2017</div>
       <div class="meta">
         <div class="ttl">Annual Average Runoff Ensemble Forecast for Jinping I-Stage Hydropower Station Based on Elman Neural Network</div>
         <div class="auth"><span class="me">Zhiyao He</span>, Mingxiang Yang, Hao Wang, et al.</div>
         <div class="venue"><span class="badge">Water Resources and Power</span> <a href="https://sdny.cbpt.cnki.net/portal/journal/portal/client/paper/dd376a0bb8408c9ecf8ec8d8f424cc0f">Paper</a></div>
+      </div>
+    </div>
+    <div class="pub">
+      <div class="yr">2019</div>
+      <div class="meta">
+        <div class="ttl">Runoff Prediction Method Based on Adaptive Elman Neural Network</div>
+        <div class="auth">Chenming Li, Lei Zhu, <span class="me">Zhiyao He</span>, Hongmin Gao, Yao Yang, Dan Yao, Xiaoyu Qu</div>
+        <div class="venue"><span class="badge">Water</span> <a href="https://www.mdpi.com/2073-4441/11/6/1113">Paper</a></div>
       </div>
     </div>
     <div class="pub">
@@ -592,11 +598,10 @@
           <h3>AI Engineer</h3>
           <div class="org">WellWin Technology, Hengqin Island &amp; Macau, China</div>
           <ul class="note">
-            <li>Built the perception and grasping pipelines for the Go2-W voice manipulation system.</li>
-            <li>Built offline and online voice agents for the AgiBot Lingxi X2 on Jetson.</li>
-            <li>Set up simulation and ran RL locomotion training for AKI and Unitree G1 / R1 humanoids.</li>
-            <li>Designed and built a full humanoid robotics curriculum for Macau secondary schools on the AgiBot Lingxi X2, covering three platforms (LingXin conversational agent, LinkCraft no-code choreography, AimDK ROS 2 SDK) and four grade-level extension modules of rising difficulty, from "X2 Says Hello" to "X2 as a Smart Service Robot".</li>
-            <li>Designed the MYAIR humanoid-robot task challenge and wrote its rulebook (Macao Youth AI and Robotics Competition, Macao Science Center): autonomous one-hand ball-shooting into a QR-coded 3×3 grid, with vision recognition, voice-command activation, shot planning, and a 3D-printed single-arm shooter.</li>
+            <li>Built the perception and grasping pipelines for voice-controlled navigation and manipulation on the Unitree Go2-W quadruped with a D1 arm.</li>
+            <li>Built offline and online voice agents for the AgiBot Lingxi X2, used in CTM retail stores and at live events with unstable network.</li>
+            <li>AKI humanoid (team reproduction of Unitree's open-source Qmini): brought up and debugged the control and power systems, and ran RL locomotion training in Isaac Gym.</li>
+            <li>Set up simulation environments and ran locomotion training for the Unitree G1 / R1 humanoids in Gazebo, MuJoCo and Isaac Gym.</li>
           </ul>
         </div>
       </div>
@@ -605,7 +610,7 @@
         <div class="what">
           <h3>Independent Study &amp; Research</h3>
           <div class="org">Nanjing, China</div>
-          <div class="note">Completed a full CS degree at University of the People (GPA 4.00); second journal paper published and invention patent granted during this period. Admitted to the M.Sc. Data Science at Trinity College Dublin (2025), declined for funding reasons.</div>
+          <div class="note">Completed an A.S. in Computer Science at University of the People (GPA 4.00 / 4.00) to strengthen my foundation in computer science and AI. Second journal paper published (Water, 2019); invention patent granted (2020). Admitted to the M.Sc. in Data Science, Trinity College Dublin (2025 intake).</div>
         </div>
       </div>
       <div class="row">
@@ -613,7 +618,7 @@
         <div class="what">
           <h3>Software Engineer</h3>
           <div class="org">Huawei Technologies · Nanjing R&amp;D Institute, Nanjing, China</div>
-          <div class="note">Intelligent security systems team (face, vehicle and other recognition products): system development, deployment and feature validation; cross-team debugging and system-level testing.</div>
+          <div class="note">Intelligent security systems team (face and vehicle recognition products): system development, deployment and feature validation; cross-team debugging and system-level testing.</div>
         </div>
       </div>
       <div class="row">
@@ -635,7 +640,7 @@
         <div class="what">
           <h3>M.S., Signal &amp; Information Processing</h3>
           <div class="org">Hohai University, Nanjing, China</div>
-          <div class="note">Outstanding Graduate Student (research-based degree). Thesis on machine learning for runoff forecasting.</div>
+          <div class="note">Thesis on machine learning for runoff forecasting, leading to two peer-reviewed journal papers and one Chinese invention patent. Outstanding Graduate Student.</div>
         </div>
       </div>
       <div class="row">
@@ -667,7 +672,9 @@
       <div class="g">AI &amp; robot learning</div>
       <div class="v"><span class="chip">PyTorch</span><span class="chip">Machine Learning</span><span class="chip">Computer Vision</span><span class="chip">Reinforcement Learning</span><span class="chip">LLMs</span><span class="chip">RAG</span><span class="chip">VLA</span></div>
       <div class="g">Robot platforms</div>
-      <div class="v"><span class="chip">Unitree G1 / B2 / Go2 / Go2-W</span><span class="chip">AgiBot Lingxi X2</span></div>
+      <div class="v"><span class="chip">Unitree G1 / R1</span><span class="chip">Unitree Go2 / Go2-W</span><span class="chip">AgiBot Lingxi X2</span></div>
+      <div class="g">Certificate</div>
+      <div class="v"><span class="chip">Deep Learning Specialization (DeepLearning.AI)</span></div>
     </div>
   </section>
 
