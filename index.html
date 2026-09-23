@@ -390,9 +390,10 @@
   <div class="nav-inner">
     <span class="brand"><span class="full">Zhiyao&nbsp;He</span></span>
     <nav class="links">
-      <a href="#projects">research</a>
-      <a href="#teaching">teaching</a>
+      <a href="#research">research</a>
       <a href="#experience">experience</a>
+      <a href="#teaching">teaching</a>
+      <a href="/blog/">blog</a>
     </nav>
   </div>
 </header>
@@ -438,6 +439,16 @@
     <p>I am a robotics and AI engineer working on embodied AI. I build robot pipelines that connect perception, language models, planning and control, taking systems from simulation in Gazebo, MuJoCo and Isaac Gym to real hardware.</p>
     <p>My most recent system is voice-controlled navigation and manipulation on the Unitree Go2-W quadruped with a D1 arm. Alongside that I build offline, on-device voice agents for service robots. My goal is to do a PhD in robot learning, especially on how robots can learn to perceive, reason, and act reliably in real-world environments.</p>
     <p class="muted">Based in the Hengqin Island &amp; Macau area. M.S. from Hohai University. TOEFL 100/120, CEFR C1.</p>
+  </section>
+
+  <section id="research">
+    <h2 class="section-h">Research Interests</h2>
+    <div class="interests">
+      <div class="interest"><div class="n">01</div><div class="t">Robot Learning &amp; Reinforcement Learning</div><div class="d">Learning locomotion and manipulation policies in simulation and transferring them to hardware.</div></div>
+      <div class="interest"><div class="n">02</div><div class="t">Vision-Language-Action &amp; World Action Models</div><div class="d">Mapping language and perception to robot actions, and learning world models that predict how actions change the environment.</div></div>
+      <div class="interest"><div class="n">03</div><div class="t">Manipulation &amp; Grasping</div><div class="d">Reliable grasping and motion planning under real-world perception noise.</div></div>
+      <div class="interest"><div class="n">04</div><div class="t">Simulation, SLAM &amp; Navigation</div><div class="d">Building the sim-to-real and navigation stack that manipulation depends on.</div></div>
+    </div>
   </section>
 
   <section id="projects">
@@ -504,60 +515,6 @@
       </div>
     </article>
 
-  </section>
-
-  <section id="teaching">
-    <h2 class="section-h">Teaching &amp; Outreach</h2>
-    <article class="project">
-      <div class="body">
-        <div class="ptag">Curriculum + real-robot ROS 2 · my work</div>
-        <h3>Humanoid Robotics Curriculum on AgiBot Lingxi X2</h3>
-        <div class="venue">Education product for Macau junior and senior secondary schools</div>
-        <p class="lede">A full humanoid robotics curriculum on the AgiBot Lingxi X2 for Macau secondary schools, from no-code tools to ROS 2 programming and real-robot capstones.</p>
-        <div class="roles">
-          <div class="role-line"><div class="lab">Curriculum</div><div class="val">Architected a 20-lesson core course and four grade-level modules as a spiral curriculum that progresses from no-code tools (LingXin, LinkCraft) to ROS 2 programming with the AimDK SDK, and finally to multi-platform integration.</div></div>
-          <div class="role-line"><div class="lab">Modules</div><div class="val">Designed and built the four grade-level modules, each culminating in a ROS 2 capstone that runs on the real robot, as themed scenarios of rising difficulty: "X2 Says Hello" (preset arm motions), "X2 Expresses" (screen, LED, speech), "X2 in Motion" (bipedal locomotion), and "X2 as a Smart Service Robot" (sensing and full-chain integration).</div></div>
-          <div class="role-line"><div class="lab">Capstones</div><div class="val">Engineered the four capstones on the real robot; the senior-secondary one links a head touch to a facial emotion, a spoken greeting, an arm wave, and a walk. Making it reliable meant resolving a single-threaded-executor deadlock, service-priority conflicts that dropped the speech and expression commands, and the control handoff between the robot's walking mode and the stance its arm gestures require.</div></div>
-        </div>
-        <div class="stack">
-          <span class="chip">ROS 2</span><span class="chip">AimDK SDK</span><span class="chip">LingXin</span><span class="chip">LinkCraft</span><span class="chip">AgiBot Lingxi X2</span>
-        </div>
-      </div>
-      <div class="media">
-        <video controls playsinline preload="metadata" poster="/images/curriculum_poster.jpg" src="/videos/curriculum.mp4"></video>
-        <span class="cap">Real robot · capstone demo</span>
-      </div>
-    </article>
-    <article class="project">
-      <div class="body">
-        <div class="ptag">Competition design · my work</div>
-        <h3>Humanoid Robot Task Challenge, MYAIR 2027</h3>
-        <div class="venue">Event and rulebook design · Macao Youth AI and Robotics Competition · Macao Science Center</div>
-        <p class="lede">Designer of the humanoid-robot task challenge and its rulebook: on a start signal, the robot autonomously shoots a ball one-handed into a QR-coded 3×3 grid.</p>
-        <div class="roles">
-          <div class="role-line"><div class="lab">Task design</div><div class="val">After a start signal, the robot autonomously aims and executes a one-hand shot, planning throw direction, force and release to put the ball through the target cell of a QR-coded 3×3 grid.</div></div>
-          <div class="role-line"><div class="lab">Rulebook</div><div class="val">Authored the full rulebook (equipment and safety, field layout, scoring rubric, timing and ranking) with an age-tiered design: the junior division reads a numbered grid; the senior division scans QR codes to build a position-to-code mapping and starts each shot by voice command.</div></div>
-          <div class="role-line"><div class="lab">Skills framed</div><div class="val"><span class="mut">Humanoid structure and motion principles, 3D-printing of the single-arm shooter, vision recognition and coordinate judgment, shot planning and release control, and task and time management.</span></div></div>
-        </div>
-        <div class="stack">
-          <span class="chip">Humanoid robot</span><span class="chip">Computer Vision</span><span class="chip">QR mapping</span><span class="chip">Voice command</span><span class="chip">3D printing</span><span class="chip">Rulebook design</span>
-        </div>
-      </div>
-      <div class="media">
-        <img src="/images/myair.jpg" alt="MYAIR 2027 humanoid robot task challenge: robot shooting a ball into a QR-coded 3x3 grid, with event banner">
-        <span class="cap">Competition concept · MYAIR 2027</span>
-      </div>
-    </article>
-  </section>
-
-  <section id="research">
-    <h2 class="section-h">Research Interests</h2>
-    <div class="interests">
-      <div class="interest"><div class="n">01</div><div class="t">Robot Learning &amp; Reinforcement Learning</div><div class="d">Learning locomotion and manipulation policies in simulation and transferring them to hardware.</div></div>
-      <div class="interest"><div class="n">02</div><div class="t">Vision-Language-Action &amp; World Action Models</div><div class="d">Mapping language and perception to robot actions, and learning world models that predict how actions change the environment.</div></div>
-      <div class="interest"><div class="n">03</div><div class="t">Manipulation &amp; Grasping</div><div class="d">Reliable grasping and motion planning under real-world perception noise.</div></div>
-      <div class="interest"><div class="n">04</div><div class="t">Simulation, SLAM &amp; Navigation</div><div class="d">Building the sim-to-real and navigation stack that manipulation depends on.</div></div>
-    </div>
   </section>
 
   <section id="publications">
@@ -630,6 +587,50 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <section id="teaching">
+    <h2 class="section-h">Teaching &amp; Outreach</h2>
+    <article class="project">
+      <div class="body">
+        <div class="ptag">Curriculum + real-robot ROS 2 · my work</div>
+        <h3>Humanoid Robotics Curriculum on AgiBot Lingxi X2</h3>
+        <div class="venue">Education product for Macau junior and senior secondary schools</div>
+        <p class="lede">A full humanoid robotics curriculum on the AgiBot Lingxi X2 for Macau secondary schools, from no-code tools to ROS 2 programming and real-robot capstones.</p>
+        <div class="roles">
+          <div class="role-line"><div class="lab">Curriculum</div><div class="val">Architected a 20-lesson core course and four grade-level modules as a spiral curriculum that progresses from no-code tools (LingXin, LinkCraft) to ROS 2 programming with the AimDK SDK, and finally to multi-platform integration.</div></div>
+          <div class="role-line"><div class="lab">Modules</div><div class="val">Designed and built the four grade-level modules, each culminating in a ROS 2 capstone that runs on the real robot, as themed scenarios of rising difficulty: "X2 Says Hello" (preset arm motions), "X2 Expresses" (screen, LED, speech), "X2 in Motion" (bipedal locomotion), and "X2 as a Smart Service Robot" (sensing and full-chain integration).</div></div>
+          <div class="role-line"><div class="lab">Capstones</div><div class="val">Engineered the four capstones on the real robot; the senior-secondary one links a head touch to a facial emotion, a spoken greeting, an arm wave, and a walk. Making it reliable meant resolving a single-threaded-executor deadlock, service-priority conflicts that dropped the speech and expression commands, and the control handoff between the robot's walking mode and the stance its arm gestures require.</div></div>
+        </div>
+        <div class="stack">
+          <span class="chip">ROS 2</span><span class="chip">AimDK SDK</span><span class="chip">LingXin</span><span class="chip">LinkCraft</span><span class="chip">AgiBot Lingxi X2</span>
+        </div>
+      </div>
+      <div class="media">
+        <video controls playsinline preload="metadata" poster="/images/curriculum_poster.jpg" src="/videos/curriculum.mp4"></video>
+        <span class="cap">Real robot · capstone demo</span>
+      </div>
+    </article>
+    <article class="project">
+      <div class="body">
+        <div class="ptag">Competition design · my work</div>
+        <h3>Humanoid Robot Task Challenge, MYAIR 2027</h3>
+        <div class="venue">Event and rulebook design · Macao Youth AI and Robotics Competition · Macao Science Center</div>
+        <p class="lede">Designer of the humanoid-robot task challenge and its rulebook: on a start signal, the robot autonomously shoots a ball one-handed into a QR-coded 3×3 grid.</p>
+        <div class="roles">
+          <div class="role-line"><div class="lab">Task design</div><div class="val">After a start signal, the robot autonomously aims and executes a one-hand shot, planning throw direction, force and release to put the ball through the target cell of a QR-coded 3×3 grid.</div></div>
+          <div class="role-line"><div class="lab">Rulebook</div><div class="val">Authored the full rulebook (equipment and safety, field layout, scoring rubric, timing and ranking) with an age-tiered design: the junior division reads a numbered grid; the senior division scans QR codes to build a position-to-code mapping and starts each shot by voice command.</div></div>
+          <div class="role-line"><div class="lab">Skills framed</div><div class="val"><span class="mut">Humanoid structure and motion principles, 3D-printing of the single-arm shooter, vision recognition and coordinate judgment, shot planning and release control, and task and time management.</span></div></div>
+        </div>
+        <div class="stack">
+          <span class="chip">Humanoid robot</span><span class="chip">Computer Vision</span><span class="chip">QR mapping</span><span class="chip">Voice command</span><span class="chip">3D printing</span><span class="chip">Rulebook design</span>
+        </div>
+      </div>
+      <div class="media">
+        <img src="/images/myair.jpg" alt="MYAIR 2027 humanoid robot task challenge: robot shooting a ball into a QR-coded 3x3 grid, with event banner">
+        <span class="cap">Competition concept · MYAIR 2027</span>
+      </div>
+    </article>
   </section>
 
   <section id="education">
