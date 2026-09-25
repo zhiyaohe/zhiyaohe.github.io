@@ -2,723 +2,186 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Zhiyao He, Robot Learning and Embodied AI. Robotic manipulation researcher.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Zhiyao He. Robot Learning · Robot Manipulation · Reinforcement Learning · Robotics Simulation · Computer Vision · LLM Agents.">
 <meta name="color-scheme" content="light dark">
 <title>Zhiyao He</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Inter:wght@400;500;600&display=swap">
 <style>
-  :root{
-    --bg:#f5f6f8;
-    --surface:#ffffff;
-    --surface-2:#fbfbfd;
-    --ink:#161a21;
-    --muted:#5b6472;
-    --faint:#8a93a3;
-    --line:#e3e6ec;
-    --line-strong:#d3d8e0;
-    --accent:#175a8c;
-    --accent-ink:#0f4c7a;
-    --accent-soft:rgba(23,90,140,.09);
-    --grid:rgba(23,90,140,.14);
-    --serif:"IBM Plex Serif", Georgia, "Times New Roman", serif;
-    --sans:"IBM Plex Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-    --mono:"IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-    --maxw:1060px;
-  }
-  @media (prefers-color-scheme:dark){
-    :root:not([data-theme="light"]){
-      --bg:#0d1015;
-      --surface:#141821;
-      --surface-2:#11151d;
-      --ink:#e9ecf2;
-      --muted:#9aa4b3;
-      --faint:#6b7482;
-      --line:#242b36;
-      --line-strong:#303845;
-      --accent:#6aa6d6;
-      --accent-ink:#8fbfe4;
-      --accent-soft:rgba(106,166,214,.12);
-      --grid:rgba(106,166,214,.16);
-    }
-  }
-  :root[data-theme="dark"]{
-    --bg:#0d1015;
-    --surface:#141821;
-    --surface-2:#11151d;
-    --ink:#e9ecf2;
-    --muted:#9aa4b3;
-    --faint:#6b7482;
-    --line:#242b36;
-    --line-strong:#303845;
-    --accent:#6aa6d6;
-    --accent-ink:#8fbfe4;
-    --accent-soft:rgba(106,166,214,.12);
-    --grid:rgba(106,166,214,.16);
-  }
-
+  :root{--bg:#ffffff;--ink:#1a1d23;--muted:#5d6572;--faint:#8b929e;--line:#e6e8ec;--accent:#1f5f99;
+    --serif:"Source Serif 4",Georgia,serif;--sans:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  @media (prefers-color-scheme:dark){:root{--bg:#111418;--ink:#e7eaef;--muted:#a3abb7;--faint:#747d8a;--line:#262c35;--accent:#7fb1e0}}
   *{box-sizing:border-box}
-  body{
-    margin:0;
-    background:var(--bg);
-    color:var(--ink);
-    font-family:var(--sans);
-    font-size:16px;
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-    text-rendering:optimizeLegibility;
-  }
-  a{color:inherit}
-  h1,h2,h3{text-wrap:balance;margin:0}
-
-  /* ---------- header ---------- */
-  header.nav{
-    position:sticky;
-    top:env(safe-area-inset-top,0px);
-    z-index:20;
-    background:color-mix(in srgb, var(--bg) 82%, transparent);
-    backdrop-filter:saturate(1.4) blur(10px);
-    border-bottom:1px solid var(--line);
-  }
-  .nav-inner{
-    max-width:var(--maxw);
-    margin:0 auto;
-    padding:12px 24px;
-    display:flex;
-    align-items:center;
-    gap:18px;
-  }
-  .brand{
-    font-family:var(--mono);
-    font-size:12.5px;
-    font-weight:500;
-    text-transform:uppercase;
-    letter-spacing:.09em;
-    white-space:nowrap;
-  }
-  .brand .dot{color:var(--accent)}
-  nav.links{
-    margin-left:auto;
-    display:flex;
-    gap:4px;
-    flex-wrap:wrap;
-    justify-content:flex-end;
-  }
-  nav.links a{
-    font-family:var(--mono);
-    font-size:12px;
-    text-decoration:none;
-    color:var(--muted);
-    padding:6px 9px;
-    border-radius:6px;
-    text-transform:uppercase;
-    letter-spacing:.09em;
-  }
-  nav.links a:hover{color:var(--ink);background:var(--accent-soft)}
-  nav.links a.cv{color:var(--accent);border:1px solid var(--line-strong)}
-  nav.links a.cv:hover{background:var(--accent-soft);color:var(--accent-ink)}
-
-  /* ---------- layout ---------- */
-  main{max-width:var(--maxw);margin:0 auto;padding:0 24px}
-  section{padding-block:56px;border-top:1px solid var(--line);scroll-margin-top:70px}
-  section:first-of-type{border-top:none}
-  .eyebrow{
-    font-family:var(--mono);
-    font-size:12px;
-    letter-spacing:.14em;
-    text-transform:uppercase;
-    color:var(--accent);
-    display:flex;align-items:center;gap:10px;
-    margin-bottom:22px;
-  }
-  .eyebrow::before{content:"";width:22px;height:1px;background:var(--accent);opacity:.55}
-  .section-h{
-    font-family:var(--serif);
-    font-weight:500;
-    font-size:clamp(25px,3.6vw,31px);
-    letter-spacing:-.015em;
-    color:var(--ink);
-    margin:0 0 22px;
-  }
-  h2.section-title{
-    font-family:var(--serif);
-    font-weight:500;
-    font-size:clamp(22px,3.4vw,28px);
-    letter-spacing:-.01em;
-    margin-bottom:4px;
-  }
-
-  /* ---------- hero ---------- */
-  .hero{
-    padding-block:60px 58px;border-top:none;
-    display:grid;grid-template-columns:minmax(0,1fr) 210px;gap:46px;align-items:stretch;
-  }
-  .portrait{
-    position:relative;
-    width:210px;border-radius:16px;overflow:hidden;
-    border:1px solid var(--line-strong);
-    background:
-      radial-gradient(circle at 1px 1px, var(--grid) 1px, transparent 0) 0 0/16px 16px,
-      linear-gradient(180deg,var(--surface-2),var(--surface));
-    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;
-    color:var(--muted);
-  }
-  .portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 12%;display:block}
-  .portrait .pic-icon{width:54px;height:54px;color:var(--accent);opacity:.8}
-  .portrait .pic-label{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--faint)}
-  @media (max-width:720px){
-    .hero{grid-template-columns:1fr;gap:28px;align-items:start}
-    .portrait{order:-1;width:170px;min-height:0;aspect-ratio:4/5;margin:0 0 2px}
-    .portrait .pic-icon{width:40px;height:40px}
-  }
-  .hero .kicker{
-    font-family:var(--mono);
-    font-size:13px;
-    letter-spacing:.12em;
-    text-transform:uppercase;
-    color:var(--muted);
-    margin-bottom:20px;
-  }
-  .hero h1{
-    font-family:var(--serif);
-    font-weight:600;
-    font-size:clamp(40px,8vw,68px);
-    line-height:1.02;
-    letter-spacing:-.02em;
-    margin-bottom:14px;
-  }
-  .hero .role{
-    font-size:clamp(18px,3.2vw,22px);
-    color:var(--ink);
-    font-weight:500;
-    margin-bottom:16px;
-  }
-  .hero .role .em{color:var(--accent)}
-  .hero .focus{
-    color:var(--muted);
-    max-width:none;
-    font-size:15px;
-    margin-bottom:14px;
-  }
-  .hero .focus b{color:var(--ink);font-weight:500}
-  .hero .seeking{
-    font-family:var(--mono);font-size:13px;color:var(--accent);
-    display:flex;align-items:center;gap:9px;margin-bottom:28px;
-  }
-  .hero .seeking::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent)}
-  .btnrow{display:flex;flex-wrap:wrap;gap:10px}
-  .btn{
-    font-family:var(--mono);
-    font-size:13px;
-    text-decoration:none;
-    display:inline-flex;align-items:center;gap:8px;
-    padding:9px 14px;
-    border:1px solid var(--line-strong);
-    border-radius:8px;
-    background:var(--surface);
-    color:var(--ink);
-    transition:border-color .15s, background .15s, transform .05s;
-  }
-  .btn:hover{border-color:var(--accent);background:var(--accent-soft);color:var(--accent-ink)}
-  .btn:active{transform:translateY(1px)}
-  .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
-  .btn.primary:hover{background:var(--accent-ink);color:#fff}
-  .btn .ph{color:var(--faint);font-size:11px}
-  .btn svg{width:15px;height:15px;flex:none}
-
-  /* ---------- about ---------- */
-  .about p{max-width:78ch;font-size:17px;color:var(--ink)}
-  .about p + p{margin-top:14px}
-  .about .muted{color:var(--muted);font-size:15.5px}
-
-  /* ---------- research chips ---------- */
-  .interests{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:4px}
-  .interest{
-    border:1px solid var(--line);
-    background:var(--surface);
-    border-radius:10px;
-    padding:16px 18px;
-  }
-  .interest .n{font-family:var(--mono);font-size:12px;color:var(--faint)}
-  .interest .t{font-family:var(--serif);font-size:18px;font-weight:500;margin-top:6px}
-  .interest .d{color:var(--muted);font-size:14px;margin-top:4px}
-
-  /* ---------- projects ---------- */
-  .project{
-    border:1px solid var(--line);
-    background:var(--surface);
-    border-radius:14px;
-    overflow:hidden;
-    display:grid;
-    grid-template-columns:minmax(0,1fr) 300px;
-  }
-  .project + .project{margin-top:22px}
-  .mini{border:1px solid var(--line);background:var(--surface);border-radius:14px;padding:20px 28px;margin-top:22px}
-  .mini h3{font-family:var(--serif);font-weight:500;font-size:19px;letter-spacing:-.01em;margin:6px 0 6px}
-  .mini p{color:var(--muted);font-size:15px;margin:0}
-  .mini .ptag{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:.04em}
-  .project .body{padding:26px 28px}
-  .project .ptag{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:.04em}
-  .project h3{
-    font-family:var(--serif);
-    font-weight:500;
-    font-size:22px;
-    letter-spacing:-.01em;
-    margin:8px 0 4px;
-  }
-  .project .venue{font-family:var(--mono);font-size:12px;color:var(--faint);margin-bottom:14px}
-  .project .lede{color:var(--muted);font-size:15px;max-width:52ch;margin-bottom:18px}
-  .roles{display:flex;flex-direction:column;gap:12px}
-  .role-line .lab{
-    font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;
-    color:var(--faint);margin-bottom:3px;
-  }
-  .role-line .val{font-size:14.5px;color:var(--ink)}
-  .role-line .val .mut{color:var(--muted)}
-  .stack{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
-  .chip{
-    font-family:var(--mono);font-size:11.5px;
-    color:var(--muted);
-    border:1px solid var(--line);
-    background:var(--surface-2);
-    padding:3px 8px;border-radius:6px;
-  }
-  /* placeholder media panel */
-  .media{
-    position:relative;overflow:hidden;
-    border-left:1px solid var(--line);
-    background:
-      radial-gradient(circle at 1px 1px, var(--grid) 1px, transparent 0) 0 0/16px 16px,
-      linear-gradient(180deg, var(--surface-2), var(--surface));
-    display:flex;flex-direction:column;align-items:center;justify-content:center;
-    gap:12px;
-    min-height:230px;
-    color:var(--muted);
-    text-align:center;
-    padding:20px;
-  }
-  .media > video,.media > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-  .media.fit>video{object-fit:contain}
-  /* full-width featured card: landscape image shown whole */
-  .project.feature{grid-template-columns:1fr}
-  .project.feature .media{order:-1;border-left:none;border-bottom:1px solid var(--line);min-height:0;aspect-ratio:auto;padding:0;background:#0d1015}
-  .project.feature .media > img{position:static;inset:auto;width:100%;height:auto;object-fit:contain;display:block}
-  .project.feature .media .cap{padding:26px 14px 10px}
-  .media .cap{position:absolute;left:0;right:0;bottom:0;z-index:2;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;padding:22px 12px 9px;background:linear-gradient(transparent,rgba(0,0,0,.62))}
-  .media .code{position:relative;z-index:2}
-  .media .code{font-family:var(--mono);font-size:13px;letter-spacing:.06em;color:var(--ink)}
-  .media .ph{font-family:var(--mono);font-size:11px;color:var(--faint);letter-spacing:.06em}
-  .media svg{width:64px;height:64px;color:var(--accent);opacity:.85}
-
-  /* ---------- publications ---------- */
-  .pub{display:flex;gap:18px;padding:16px 0;border-top:1px solid var(--line)}
-  .pub:first-child{border-top:none}
-  .pub .yr{font-family:var(--mono);font-size:13px;color:var(--accent);min-width:44px;padding-top:2px}
-  .pub .meta{flex:1;min-width:0}
-  .pub .ttl{font-size:16px;color:var(--ink);font-weight:500}
-  .pub .auth{font-size:14px;color:var(--muted);margin-top:3px}
-  .pub .auth .me{color:var(--ink);border-bottom:1px solid var(--accent)}
-  .pub .venue{font-family:var(--mono);font-size:12.5px;color:var(--faint);margin-top:5px;display:flex;gap:12px;flex-wrap:wrap}
-  .pub .venue a{color:var(--accent);text-decoration:none}
-  .pub .venue a:hover{text-decoration:underline}
-  .pub .badge{
-    font-family:var(--mono);font-size:11px;color:var(--accent);
-    border:1px solid var(--line-strong);border-radius:5px;padding:1px 6px;
-  }
-
-  /* ---------- two-col rows (exp / edu) ---------- */
-  .rows{display:flex;flex-direction:column}
-  .row{
-    display:grid;grid-template-columns:150px minmax(0,1fr);
-    gap:20px;padding:18px 0;border-top:1px solid var(--line);
-  }
-  .row:first-child{border-top:none}
-  .row .when{font-family:var(--mono);font-size:12.5px;color:var(--faint);padding-top:3px}
-  .row .what h3{font-family:var(--sans);font-size:16.5px;font-weight:600;margin-bottom:2px}
-  .row .what .org{color:var(--accent);font-size:14.5px}
-  .row .what .note{color:var(--muted);font-size:14.5px;margin-top:6px}
-  .row .what .note li{margin-bottom:3px}
-  .row .what ul{margin:6px 0 0;padding-left:18px}
-
-  /* ---------- skills / honors ---------- */
-  .skills{display:grid;grid-template-columns:180px minmax(0,1fr);gap:14px 20px}
-  .skills .g{border-top:1px solid var(--line);padding-top:14px;font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
-  .skills .v{border-top:1px solid var(--line);padding-top:14px;display:flex;flex-wrap:wrap;gap:7px}
-  .honors{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
-  .honors li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid var(--line);font-size:15px}
-  .honors li:first-child{border-top:none}
-  .honors .yr{font-family:var(--mono);font-size:12.5px;color:var(--faint);white-space:nowrap}
-
-  /* ---------- contact / footer ---------- */
-  .contact-card{
-    border:1px solid var(--line);border-radius:14px;background:var(--surface);
-    padding:30px 28px;display:flex;flex-wrap:wrap;align-items:center;gap:22px;justify-content:space-between;
-  }
-  .contact-card .lead{font-family:var(--serif);font-size:20px;font-weight:500}
-  .contact-card .sub{color:var(--muted);font-size:14.5px;margin-top:4px}
-  footer.foot{
-    max-width:var(--maxw);margin:0 auto;padding:26px 24px 40px;
-    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
-    font-family:var(--mono);font-size:12px;color:var(--faint);
-    border-top:1px solid var(--line);
-  }
-  footer.foot a{color:var(--muted);text-decoration:none}
-  footer.foot a:hover{color:var(--accent)}
-
-  a.inline{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-soft)}
-  a.inline:hover{border-bottom-color:var(--accent)}
-
-  :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
-
-  @media (max-width:820px){
-    .project{grid-template-columns:1fr}
-    .media{border-left:none;border-top:1px solid var(--line);order:-1;min-height:0;aspect-ratio:2/3}
-    .interests{grid-template-columns:1fr}
-  }
-  @media (max-width:560px){
-    main,.nav-inner,footer.foot{padding-left:16px;padding-right:16px}
-    .row{grid-template-columns:1fr;gap:4px}
-    .row .when{padding-top:0}
-    .skills{grid-template-columns:1fr;gap:4px 0}
-    .skills .v{border-top:none;padding-top:6px;margin-bottom:8px}
-    nav.links a{padding:6px 7px}
-    .brand .full{display:none}
-  }
-  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:900px;margin:0 auto;padding:56px 28px 72px}
+  .top{display:flex;justify-content:flex-end;gap:18px;font-size:13.5px;margin-bottom:28px}
+  .top a{color:var(--muted)} .top a:hover{color:var(--accent)}
+  header h1{font-family:var(--serif);font-weight:600;font-size:40px;line-height:1.1;letter-spacing:-.01em;margin:0 0 10px}
+  .contact{color:var(--muted);font-size:14.5px;margin-bottom:6px}
+  .contact .sep{color:var(--faint);margin:0 8px}
+  .kw{color:var(--ink);font-size:14.5px}
+  header{display:flex;justify-content:space-between;align-items:flex-start;gap:28px}
+  .photo{width:124px;height:155px;object-fit:cover;border-radius:10px;border:1px solid var(--line);flex:none}
+  section{margin-top:34px}
+  h2{font-family:var(--serif);font-weight:600;font-size:19px;margin:0 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+  p{margin:0 0 10px}
+  .ent{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-top:16px}
+  section h2 + .ent{margin-top:4px}
+  .et{font-weight:600} .eo{color:var(--muted);margin-left:10px}
+  .ed{color:var(--faint);font-size:13.5px;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .sub{color:var(--muted);margin:2px 0 4px}
+  ul{margin:6px 0 0;padding-left:20px} li{margin-bottom:5px}
+  li.hon{list-style:none;margin-left:-20px;display:flex;justify-content:space-between;gap:16px}
+  .lab{font-weight:600;margin-right:6px}
+  .me{font-weight:600}
+  li a{font-size:13.5px;margin-left:4px}
+  footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:var(--faint);font-size:13px;display:flex;justify-content:space-between}
+  @media (max-width:600px){header{flex-direction:column-reverse;gap:18px} .photo{width:104px;height:130px} .wrap{padding:36px 18px 56px} header h1{font-size:32px}
+    .ent{flex-direction:column;gap:0} .eo{display:block;margin-left:0} .contact .sep{display:none} .contact a{display:block}}
 </style>
 </head>
 <body>
-<header class="nav">
-  <div class="nav-inner">
-    <span class="brand"><span class="full">Zhiyao&nbsp;He</span></span>
-    <nav class="links">
-      <a href="#research">research</a>
-      <a href="#experience">experience</a>
-      <a href="#teaching">teaching</a>
-      <a href="/blog/">blog</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-
-  <section class="hero" id="top">
-   <div class="hero-text">
-    <h1>Zhiyao&nbsp;He</h1>
-    <div class="role">Robot Learning <span class="em">·</span> Embodied AI</div>
-    <p class="focus">Building robots that <b>perceive</b>, <b>reason</b>, and <b>act</b> in the real world, from simulation to real hardware.</p>
-    <div class="seeking">Seeking a PhD in robot learning · 2027 start</div>
-    <div class="btnrow">
-      <a class="btn primary" href="/files/Zhiyao_He_CV.pdf">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M5 21h14"/></svg>
-        Download CV
-      </a>
-      <a class="btn" href="https://github.com/zhiyaohe?tab=repositories">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49l-.01-1.7c-2.78.62-3.37-1.37-3.37-1.37-.46-1.19-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.79-4.58 5.05.36.32.68.94.68 1.9l-.01 2.82c0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
-        GitHub
-      </a>
-      <a class="btn" href="https://www.linkedin.com/in/zhiyao-he-901283326/">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3 9.5h4V21H3V9.5Zm6 0h3.8v1.57h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.3c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21H9V9.5Z"/></svg>
-        LinkedIn
-      </a>
-      <a class="btn" href="mailto:zhiyaohe@outlook.com">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-        Email
-      </a>
-      <a class="btn" href="/blog/">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h13a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5Z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>
-        Blog
-      </a>
-    </div>
+<div class="wrap">
+  <nav class="top"><a href="/files/Zhiyao_He_CV.pdf">CV (PDF)</a><a href="/blog/">Blog</a></nav>
+  <header>
+   <div class="htxt">
+    <h1>Zhiyao He</h1>
+    <div class="contact"><a href="mailto:zhiyaohe@outlook.com">zhiyaohe@outlook.com</a><span class="sep">|</span><a href="https://github.com/zhiyaohe?tab=repositories">https://github.com/zhiyaohe</a></div>
+    <div class="kw">Robot Learning · Robot Manipulation · Reinforcement Learning · Robotics Simulation · Computer Vision · LLM Agents</div>
    </div>
-   <div class="portrait">
-     <img src="/images/profile.jpg" alt="Zhiyao He, portrait">
-   </div>
-  </section>
-
-  <section id="about" class="about">
-    <h2 class="section-h">About</h2>
-    <p>I am a robotics and AI engineer working on embodied AI. I build robot pipelines that connect perception, language models, planning and control, taking systems from simulation in Gazebo, MuJoCo and Isaac Gym to real hardware.</p>
-    <p>My most recent system is voice-controlled navigation and manipulation on the Unitree Go2-W quadruped with a D1 arm. Alongside that I build offline, on-device voice agents for service robots. My goal is to do a PhD in robot learning, especially on how robots can learn to perceive, reason, and act reliably in real-world environments.</p>
-    <p class="muted">Based in the Hengqin Island &amp; Macau area. M.S. from Hohai University. TOEFL 100/120, CEFR C1.</p>
-  </section>
-
-  <section id="research">
-    <h2 class="section-h">Research Interests</h2>
-    <div class="interests">
-      <div class="interest"><div class="n">01</div><div class="t">Robot Learning &amp; Reinforcement Learning</div><div class="d">Learning locomotion and manipulation policies in simulation and transferring them to hardware.</div></div>
-      <div class="interest"><div class="n">02</div><div class="t">Vision-Language-Action &amp; World Action Models</div><div class="d">Mapping language and perception to robot actions, and learning world models that predict how actions change the environment.</div></div>
-      <div class="interest"><div class="n">03</div><div class="t">Manipulation &amp; Grasping</div><div class="d">Reliable grasping and motion planning under real-world perception noise.</div></div>
-      <div class="interest"><div class="n">04</div><div class="t">Simulation, SLAM &amp; Navigation</div><div class="d">Building the sim-to-real and navigation stack that manipulation depends on.</div></div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2 class="section-h">Selected Projects</h2>
-    
-    <article class="project">
-      <div class="body">
-        <div class="ptag">Perception + Manipulation · my work</div>
-        <h3>Voice-Controlled Navigation &amp; Manipulation on Unitree Go2-W</h3>
-        <div class="venue">Go2-W quadruped + D1 arm · team project with Macau Millennium College · ROS 2</div>
-        <p class="lede">A quadruped that hears a spoken request, navigates to a target, and grasps it. I owned the perception and manipulation halves of the system.</p>
-        <div class="roles">
-          <div class="role-line"><div class="lab">Perception</div><div class="val">Fine-tuned YOLO11 by transfer learning to detect a specific bottle; a wrist-mounted depth camera and 2D-to-3D transform locate the target in the world frame.</div></div>
-          <div class="role-line"><div class="lab">Manipulation</div><div class="val">A grasping pipeline on MoveIt 2: KDL inverse kinematics, OMPL / RRTConnect planning, FCL collision checking, planning a collision-free path and executing the grasp.</div></div>
-          <div class="role-line"><div class="lab">Integration</div><div class="val"><span class="mut">Teammates built SLAM navigation and the ASR / LLM / OpenClaw / TTS pipeline; we defined the interfaces and integrated the full system, tested in MuJoCo and Gazebo and on the real robot.</span></div></div>
-        </div>
-        <div class="stack">
-          <span class="chip">ROS 2</span><span class="chip">YOLO11</span><span class="chip">RealSense</span><span class="chip">MoveIt 2</span><span class="chip">KDL</span><span class="chip">OMPL / RRTConnect</span><span class="chip">FCL</span><span class="chip">MuJoCo</span><span class="chip">Gazebo</span>
-        </div>
-      </div>
-      <div class="media">
-        <video autoplay muted loop playsinline preload="metadata" src="/videos/go2w.mp4"></video>
-        <span class="cap">Real robot · nav + grasp + deliver</span>
-      </div>
-    </article>
-
-    <article class="project">
-      <div class="body">
-        <div class="ptag">Voice agent, offline + online · my work</div>
-        <h3>Retail Voice Agent on AgiBot Lingxi X2</h3>
-        <div class="venue">In-store retail assistant · industry project for CTM (Macau Telecom) · offline and online versions</div>
-        <p class="lede">Customers ask about products, plans and pricing by voice. Built in two versions: an offline one for sites with unreliable network, and an online one with a Cantonese voice for Macau customers.</p>
-        <div class="roles">
-          <div class="role-line"><div class="lab">Offline version</div><div class="val">Runs on a Jetson. A bridge node streams the X2's microphone audio to a local FastAPI backend running FunASR / Paraformer-zh ASR, Qwen2.5-7B via Ollama, pgvector RAG over a PostgreSQL product database, and Piper TTS.</div></div>
-          <div class="role-line"><div class="lab">Online version</div><div class="val">Built with the Lingxi AgentSDK, using DeepSeek as the LLM and MiniMax TTS with a Cantonese voice. It draws on three knowledge sources: the Lingxi platform knowledge base, the local RAG system, and third-party business systems such as CTM's.</div></div>
-        </div>
-        <div class="stack">
-          <span class="chip">Jetson</span><span class="chip">FastAPI</span><span class="chip">FunASR</span><span class="chip">Qwen2.5-7B</span><span class="chip">Ollama</span><span class="chip">PostgreSQL</span><span class="chip">pgvector</span><span class="chip">RAG</span><span class="chip">Piper TTS</span><span class="chip">Lingxi AgentSDK</span><span class="chip">DeepSeek</span><span class="chip">MiniMax TTS</span>
-        </div>
-      </div>
-      <div class="media">
-        <video autoplay muted loop playsinline preload="metadata" src="/videos/x2.mp4"></video>
-        <span class="cap">Real robot · voice agent</span>
-      </div>
-    </article>
-
-    <article class="project">
-      <div class="body">
-        <div class="ptag">RL locomotion + bring-up · my work</div>
-        <h3>RL Locomotion &amp; Robot Bring-up on the AKI Humanoid</h3>
-        <div class="venue">Company education product · team reproduction of Unitree's open-source Qmini</div>
-        <p class="lede">Bringing a reproduced humanoid to life and teaching it to walk in simulation.</p>
-        <div class="roles">
-          <div class="role-line"><div class="lab">Bring-up</div><div class="val">Brought up and debugged the control system and power system on the reproduced robot.</div></div>
-          <div class="role-line"><div class="lab">Learning</div><div class="val">Ran reinforcement-learning locomotion training in Isaac Gym; set up Gazebo, MuJoCo and Isaac Gym environments for AKI and the Unitree G1 / R1 humanoids.</div></div>
-        </div>
-        <div class="stack">
-          <span class="chip">Isaac Gym</span><span class="chip">Reinforcement Learning</span><span class="chip">MuJoCo</span><span class="chip">Gazebo</span><span class="chip">Unitree G1 / R1</span><span class="chip">control systems</span>
-        </div>
-      </div>
-      <div class="media">
-        <video autoplay muted loop playsinline preload="metadata" src="/videos/aki.mp4"></video>
-        <span class="cap">Simulation</span>
-      </div>
-    </article>
-
-  </section>
-
-  <section id="publications">
-    <h2 class="section-h">Publications &amp; Patent</h2>
-    <p class="about" style="color:var(--muted);font-size:15px;max-width:60ch;margin:10px 0 20px">My published work is from an earlier machine-learning and hydrology research period; it reflects a full research pipeline from data to peer review.</p>
-    <div class="pub">
-      <div class="yr">2017</div>
-      <div class="meta">
-        <div class="ttl">Annual Average Runoff Ensemble Forecast for Jinping I-Stage Hydropower Station Based on Elman Neural Network</div>
-        <div class="auth"><span class="me">Zhiyao He</span>, Mingxiang Yang, Hao Wang, et al.</div>
-        <div class="venue"><span class="badge">Water Resources and Power</span> <a href="https://sdny.cbpt.cnki.net/portal/journal/portal/client/paper/dd376a0bb8408c9ecf8ec8d8f424cc0f">Paper</a></div>
-      </div>
-    </div>
-    <div class="pub">
-      <div class="yr">2019</div>
-      <div class="meta">
-        <div class="ttl">Runoff Prediction Method Based on Adaptive Elman Neural Network</div>
-        <div class="auth">Chenming Li, Lei Zhu, <span class="me">Zhiyao He</span>, Hongmin Gao, Yao Yang, Dan Yao, Xiaoyu Qu</div>
-        <div class="venue"><span class="badge">Water</span> <a href="https://www.mdpi.com/2073-4441/11/6/1113">Paper</a></div>
-      </div>
-    </div>
-    <div class="pub">
-      <div class="yr">2020</div>
-      <div class="meta">
-        <div class="ttl">Medium- and Long-term Runoff Forecasting Method Based on Mutual Information, Kernel PCA, and Elman Neural Network</div>
-        <div class="auth"><span class="me">Zhiyao He</span> · Chinese National Invention Patent, granted 2020</div>
-        <div class="venue"><span class="badge">Patent</span> CN107463993B <a href="https://patents.google.com/patent/CN107463993A/en">Google Patents</a></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="experience">
-    <h2 class="section-h">Experience</h2>
-    <div class="rows">
-      <div class="row">
-        <div class="when">Mar 2026 – Present</div>
-        <div class="what">
-          <h3>AI Engineer</h3>
-          <div class="org">WellWin Technology, Hengqin Island &amp; Macau, China</div>
-          <ul class="note">
-            <li>Built the perception and grasping pipelines for voice-controlled navigation and manipulation on the Unitree Go2-W quadruped with a D1 arm.</li>
-            <li>Built offline and online voice agents for the AgiBot Lingxi X2, used in CTM retail stores and at live events with unstable network.</li>
-            <li>AKI humanoid (team reproduction of Unitree's open-source Qmini): brought up and debugged the control and power systems, and ran RL locomotion training in Isaac Gym.</li>
-            <li>Set up simulation environments and ran locomotion training for the Unitree G1 / R1 humanoids in Gazebo, MuJoCo and Isaac Gym.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="when">Jul 2019 – Feb 2026</div>
-        <div class="what">
-          <h3>Independent Study &amp; Research</h3>
-          <div class="org">Nanjing, China</div>
-          <div class="note">Completed an A.S. in Computer Science at University of the People (GPA 4.00 / 4.00) to strengthen my foundation in computer science and AI. Second journal paper published (Water, 2019); invention patent granted (2020). Admitted to the M.Sc. in Data Science, Trinity College Dublin (2025 intake).</div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="when">Jul 2018 – Jun 2019</div>
-        <div class="what">
-          <h3>Software Engineer</h3>
-          <div class="org">Huawei Technologies · Nanjing R&amp;D Institute, Nanjing, China</div>
-          <div class="note">Intelligent security systems team (face and vehicle recognition products): system development, deployment and feature validation; cross-team debugging and system-level testing.</div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="when">Jun 2016 – Jun 2017</div>
-        <div class="what">
-          <h3>Research Intern</h3>
-          <div class="org">China Institute of Water Resources and Hydropower Research, Beijing, China</div>
-          <div class="note">Built a complete runoff-prediction pipeline: data collection and cleaning, feature engineering, model development, tuning, training and evaluation. Produced two journal papers and one patent. <a class="inline" href="/files/Internship_Certificate_IWHR.pdf" target="_blank" rel="noopener">Certificate</a></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="teaching">
-    <h2 class="section-h">Teaching &amp; Outreach</h2>
-    <article class="project">
-      <div class="body">
-        <div class="ptag">Curriculum + real-robot ROS 2 · my work</div>
-        <h3>Humanoid Robotics Curriculum on AgiBot Lingxi X2</h3>
-        <div class="venue">Education product for Macau junior and senior secondary schools</div>
-        <p class="lede">A full humanoid robotics curriculum on the AgiBot Lingxi X2 for Macau secondary schools, from no-code tools to ROS 2 programming and real-robot capstones.</p>
-        <div class="roles">
-          <div class="role-line"><div class="lab">Curriculum</div><div class="val">Architected a 20-lesson core course and four grade-level modules as a spiral curriculum that progresses from no-code tools (LingXin, LinkCraft) to ROS 2 programming with the AimDK SDK, and finally to multi-platform integration.</div></div>
-          <div class="role-line"><div class="lab">Modules</div><div class="val">Designed and built the four grade-level modules, each culminating in a ROS 2 capstone that runs on the real robot, as themed scenarios of rising difficulty: "X2 Says Hello" (preset arm motions), "X2 Expresses" (screen, LED, speech), "X2 in Motion" (bipedal locomotion), and "X2 as a Smart Service Robot" (sensing and full-chain integration).</div></div>
-          <div class="role-line"><div class="lab">Capstones</div><div class="val">Engineered the four capstones on the real robot; the senior-secondary one links a head touch to a facial emotion, a spoken greeting, an arm wave, and a walk. Making it reliable meant resolving a single-threaded-executor deadlock, service-priority conflicts that dropped the speech and expression commands, and the control handoff between the robot's walking mode and the stance its arm gestures require.</div></div>
-        </div>
-        <div class="stack">
-          <span class="chip">ROS 2</span><span class="chip">AimDK SDK</span><span class="chip">LingXin</span><span class="chip">LinkCraft</span><span class="chip">AgiBot Lingxi X2</span>
-        </div>
-      </div>
-      <div class="media">
-        <video controls playsinline preload="metadata" poster="/images/curriculum_poster.jpg" src="/videos/curriculum.mp4"></video>
-        <span class="cap">Real robot · capstone demo</span>
-      </div>
-    </article>
-    <article class="project">
-      <div class="body">
-        <div class="ptag">Competition design · my work</div>
-        <h3>Humanoid Robot Task Challenge, MYAIR 2027</h3>
-        <div class="venue">Event and rulebook design · Macao Youth AI and Robotics Competition · Macao Science Center</div>
-        <p class="lede">Designer of the humanoid-robot task challenge and its rulebook: on a start signal, the robot autonomously shoots a ball one-handed into a QR-coded 3×3 grid.</p>
-        <div class="roles">
-          <div class="role-line"><div class="lab">Task design</div><div class="val">After a start signal, the robot autonomously aims and executes a one-hand shot, planning throw direction, force and release to put the ball through the target cell of a QR-coded 3×3 grid.</div></div>
-          <div class="role-line"><div class="lab">Rulebook</div><div class="val">Authored the full rulebook (equipment and safety, field layout, scoring rubric, timing and ranking) with an age-tiered design: the junior division reads a numbered grid; the senior division scans QR codes to build a position-to-code mapping and starts each shot by voice command.</div></div>
-          <div class="role-line"><div class="lab">Skills framed</div><div class="val"><span class="mut">Humanoid structure and motion principles, 3D-printing of the single-arm shooter, vision recognition and coordinate judgment, shot planning and release control, and task and time management.</span></div></div>
-        </div>
-        <div class="stack">
-          <span class="chip">Humanoid robot</span><span class="chip">Computer Vision</span><span class="chip">QR mapping</span><span class="chip">Voice command</span><span class="chip">3D printing</span><span class="chip">Rulebook design</span>
-        </div>
-      </div>
-      <div class="media">
-        <img src="/images/myair.jpg" alt="MYAIR 2027 official event poster, Macao Youth AI and Robotics Competition">
-        <span class="cap">MYAIR 2027 · Macao Science Center</span>
-      </div>
-    </article>
-    <div class="mini">
-      <div class="ptag">Outreach</div>
-      <h3>UoPeople Ambassador, University of the People</h3>
-      <p>Promoted the university’s tuition-free model and answered questions from prospective students. Received the Ambassador Award (AY2022, Term 5). <a class="inline" href="/files/UoPeople_Ambassador_Certificate.pdf" target="_blank" rel="noopener">Certificate</a></p>
-    </div>
-  </section>
-
-  <section id="education">
-    <h2 class="section-h">Education</h2>
-    <div class="rows">
-      <div class="row">
-        <div class="when">2015–2018</div>
-        <div class="what">
-          <h3>M.S., Signal &amp; Information Processing</h3>
-          <div class="org">Hohai University, Nanjing, China</div>
-          <div class="note">Thesis on machine learning for runoff forecasting, leading to two peer-reviewed journal papers and one Chinese invention patent. Outstanding Graduate Student.</div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="when">2011–2014</div>
-        <div class="what">
-          <h3>B.Eng., Electrical Engineering &amp; Automation</h3>
-          <div class="org">Anhui Agricultural University, Hefei, China</div>
-          <div class="note">CGPA 3.65 / 4.00. Finished the four-year program in three years, the only student in the cohort to do so.</div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="when">2021–2024</div>
-        <div class="what">
-          <h3>A.S., Computer Science</h3>
-          <div class="org">University of the People, USA</div>
-          <div class="note">CGPA 4.00 / 4.00. President's List, 12 terms.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2 class="section-h">Technical Skills</h2>
-    <div class="skills">
-      <div class="g">Programming &amp; systems</div>
-      <div class="v"><span class="chip">Python</span><span class="chip">C++</span><span class="chip">Linux</span><span class="chip">Docker</span><span class="chip">Git</span></div>
-      <div class="g">Robotics</div>
-      <div class="v"><span class="chip">ROS / ROS 2</span><span class="chip">MoveIt 2</span><span class="chip">Nav2</span><span class="chip">Gazebo</span><span class="chip">MuJoCo</span><span class="chip">Isaac Gym</span><span class="chip">SLAM</span><span class="chip">Navigation</span><span class="chip">Perception</span></div>
-      <div class="g">AI &amp; robot learning</div>
-      <div class="v"><span class="chip">PyTorch</span><span class="chip">Machine Learning</span><span class="chip">Computer Vision</span><span class="chip">Reinforcement Learning</span><span class="chip">LLMs</span><span class="chip">RAG</span><span class="chip">VLA</span></div>
-      <div class="g">Robot platforms</div>
-      <div class="v"><span class="chip">Unitree G1 / R1</span><span class="chip">Unitree Go2 / Go2-W</span><span class="chip">AgiBot Lingxi X2</span></div>
-      <div class="g">Certificate</div>
-      <div class="v"><span class="chip">Deep Learning Specialization (DeepLearning.AI)</span></div>
-    </div>
-  </section>
-
-  <section id="honors">
-    <h2 class="section-h">Honors &amp; Awards</h2>
-    <ul class="honors">
-      <li><span>Outstanding Graduate Student, Hohai University</span><span class="yr">2017</span></li>
-      <li><span>Hohai University Scholarship</span><span class="yr">2015–2017</span></li>
-      <li><span>Anhui Agricultural University Scholarship</span><span class="yr">2012</span></li>
-      <li><span>Outstanding Contribution Award, Huawei Nanjing R&amp;D Institute</span><span class="yr">2019</span></li>
-      <li><span>President's List, University of the People (12 terms)</span><span class="yr">2021–2024</span></li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2 class="section-h">Contact</h2>
-    <div class="contact-card">
-      <div>
-        <div class="lead">Open to PhD positions in robot learning.</div>
-        <div class="sub">Happy to talk about embodied intelligence and physical AI.</div>
-      </div>
-      <div class="btnrow">
-        <a class="btn primary" href="mailto:zhiyaohe@outlook.com">zhiyaohe@outlook.com</a>
-        <a class="btn" href="https://github.com/zhiyaohe?tab=repositories">GitHub</a>
-        <a class="btn" href="/files/Zhiyao_He_CV.pdf">CV</a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="foot">
-  <span>© 2026 Zhiyao He</span>
-  <span>Robotics &amp; AI Engineer · <a href="/blog/">Blog</a></span>
-</footer>
+   <img class="photo" src="/images/profile.jpg" alt="Zhiyao He">
+  </header>
+  <main>
+    <section id="profile">
+      <h2>Profile</h2>
+      <p>I am an AI engineer working on embodied AI systems. I build robot pipelines that connect perception, language models, planning and control, from simulation (Isaac Gym, MuJoCo, Gazebo) to real hardware. My recent work is a voice-controlled navigation and manipulation system on the Unitree Go2-W quadruped robot. I am seeking a PhD position in robot learning, especially on how robots can learn manipulation skills that work reliably in the real world.</p>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <div class="ent"><div class="eh"><span class="et">M.S. in Signal and Information Processing</span><span class="eo">Hohai University, Nanjing, China</span></div><div class="ed">Sep 2015 – Jul 2018</div></div>
+      <p class="sub">Grade: 82.33 / 100 (research-based degree)</p>
+      <ul>
+        <li>Thesis work on machine learning for runoff forecasting; published two peer-reviewed journal papers and obtained one Chinese invention patent.</li>
+        <li>Relevant courses: Information Acquisition and Processing, Optimization. Certificate: Deep Learning Specialization (DeepLearning.AI).</li>
+      </ul>
+      <div class="ent"><div class="eh"><span class="et">B.Eng. in Electrical Engineering and Automation</span><span class="eo">Anhui Agricultural University, Hefei, China</span></div><div class="ed">Sep 2011 – Jul 2014</div></div>
+      <p class="sub">CGPA: 3.65 / 4.00</p>
+      <ul>
+        <li>Finished the four-year program in three years.</li>
+        <li>Relevant courses: Control Theory, Circuit Design, C Programming, Digital Signal Processing.</li>
+      </ul>
+      <div class="ent"><div class="eh"><span class="et">A.S. in Computer Science</span><span class="eo">University of the People, USA</span></div><div class="ed">Nov 2021 – Nov 2024</div></div>
+      <p class="sub">CGPA: 4.00 / 4.00</p>
+      <ul>
+        <li>President's List for 12 terms.</li>
+        <li>Relevant courses: Python, Java, Databases, Operating Systems, Software Engineering, Computer Networks.</li>
+      </ul>
+    </section>
+    <section id="publications-and-patent">
+      <h2>Publications and Patent</h2>
+      <ul>
+        <li><span class="me">Zhiyao He</span>, Mingxiang Yang, Hao Wang, et al. “Annual Average Runoff Ensemble Forecast for Jinping I-Stage Hydropower Station Based on Elman Neural Network.” Water Resources and Power, 2017. <a href="https://sdny.cbpt.cnki.net/portal/journal/portal/client/paper/dd376a0bb8408c9ecf8ec8d8f424cc0f">Paper</a></li>
+        <li>Chenming Li, Lei Zhu, <span class="me">Zhiyao He</span>, et al. “Runoff Prediction Method Based on Adaptive Elman Neural Network.” Water, 2019. <a href="https://www.mdpi.com/2073-4441/11/6/1113">Paper</a></li>
+        <li><span class="me">Zhiyao He</span> (Patent holder). “Medium- and Long-term Runoff Forecasting Method Based on Mutual Information, Kernel PCA, and Elman Neural Network.” Chinese National Invention Patent, CN107463993B, granted 2020. <a href="https://patents.google.com/patent/CN107463993A/en">Patent</a></li>
+      </ul>
+    </section>
+    <section id="work-experience">
+      <h2>Work Experience</h2>
+      <div class="ent"><div class="eh"><span class="et">AI Engineer</span><span class="eo">WellWin Technology Co., Ltd., Hengqin Island, China</span></div><div class="ed">Mar 2026 – Present</div></div>
+      <ul>
+        <li>Built the perception, planning and control stack for voice- and text-controlled navigation and manipulation on the Unitree Go2-W quadruped robot with a D1 arm (details in Projects).</li>
+        <li>Implemented the closed-loop control system of the AKI humanoid robot: a reinforcement learning policy layer, a joint target layer, and PD motor control.</li>
+        <li>Designed the AKI robot's power management system, covering power input, distribution and conversion, and the load execution layer.</li>
+        <li>Integrated YOLO-based perception with ASR, LLM and TTS modules for face recognition and voice interaction.</li>
+        <li>Set up simulation environments and ran locomotion training for the AKI and Unitree G1/R1 humanoid robots in Gazebo, MuJoCo, and Isaac Gym.</li>
+      </ul>
+      <div class="ent"><div class="eh"><span class="et">Independent Study and Research</span><span class="eo">Nanjing, China</span></div><div class="ed">Jul 2019 – Feb 2026</div></div>
+      <ul>
+        <li>After Huawei, I planned to return to research. During this period my second journal paper (Water, 2019) was published and my invention patent was granted (2020).</li>
+        <li>From 2021 to 2024, I completed a full computer science degree at University of the People (GPA 4.00/4.00, see Education) to retrain from signal processing toward AI and robotics. Part of this period overlapped with the COVID-19 lockdowns in China.</li>
+        <li>Admitted to the M.Sc. in Data Science at Trinity College Dublin (2025 intake), but did not enroll.</li>
+        <li>After that, I prepared for AI engineering interviews and joined WellWin Technology in March 2026.</li>
+      </ul>
+      <div class="ent"><div class="eh"><span class="et">Software Engineer</span><span class="eo">Huawei Technologies Co., Ltd., Nanjing R&amp;D Institute, China</span></div><div class="ed">Jul 2018 – Jun 2019</div></div>
+      <ul>
+        <li>Worked on computer vision systems for face and vehicle recognition, mainly on development and performance optimization.</li>
+        <li>Debugged and tuned the systems together with other teams.</li>
+      </ul>
+      <div class="ent"><div class="eh"><span class="et">Research Intern</span><span class="eo">China Institute of Water Resources and Hydropower Research, Beijing, China</span></div><div class="ed">Jun 2016 – Jun 2017</div></div>
+      <ul>
+        <li>Built a complete runoff prediction pipeline: data collection and cleaning, feature engineering, model development, hyperparameter tuning, training and evaluation.</li>
+        <li>This work produced two journal papers and one invention patent (listed above). <a href="/files/Internship_Certificate_IWHR.pdf">Certificate</a></li>
+      </ul>
+    </section>
+    <section id="selected-projects">
+      <h2>Selected Projects</h2>
+      <div class="ent"><div class="eh"><span class="et">Voice-Controlled Navigation and Manipulation on Unitree Go2-W</span></div></div>
+      <ul>
+        <li>Perception: YOLO11 object detection with a wrist-mounted depth camera, plus 2D-to-3D coordinate transformation to locate the target in the world frame.</li>
+        <li>Navigation: SLAM-based autonomous navigation to the target position.</li>
+        <li>Language: a task planning pipeline with ASR, LLM, OpenClaw and TTS, so the robot can be controlled by natural language and reply by voice.</li>
+        <li>Manipulation: a grasping pipeline based on forward/inverse kinematics and Jacobian-based motion control.</li>
+        <li>Developed in ROS 2, tested in MuJoCo simulation and on the real robot.</li>
+      </ul>
+      <div class="ent"><div class="eh"><span class="et">AKI Humanoid Robot</span></div></div>
+      <ul>
+        <li>Real-time control loop for locomotion and interaction: an RL policy generates joint positions, a joint target layer does scaling, integration and clipping, and a PD layer drives the motors.</li>
+        <li>ASR–LLM–TTS pipeline for natural voice interaction.</li>
+      </ul>
+      <div class="ent"><div class="eh"><span class="et">Voice RAG Assistant on AgiBot Lingxi X2</span></div></div>
+      <ul>
+        <li>An in-store retail assistant: customers ask about products, plans, and pricing by voice.</li>
+        <li>Built a fully offline pipeline on a Jetson for events with unreliable networks: a bridge node streams the X2's microphone audio to a local FastAPI backend, which runs local ASR (FunASR/Paraformer-zh), a local LLM (Qwen2.5-7B via Ollama), pgvector RAG over the product database (PostgreSQL), and local TTS (Sherpa-ONNX / Piper).</li>
+      </ul>
+    </section>
+    <section id="technical-skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><span class="lab">Programming &amp; Systems:</span> Python, C++, Linux, Docker, Git</li>
+        <li><span class="lab">Robotics:</span> ROS/ROS 2, Isaac Gym, Gazebo, MuJoCo, SLAM, Navigation, Localization, Perception</li>
+        <li><span class="lab">AI &amp; Robot Learning:</span> PyTorch, Machine Learning, Computer Vision, Reinforcement Learning, ASR, TTS, LLMs, VLA</li>
+        <li><span class="lab">Robot Platforms:</span> Unitree G1, Unitree Go2/Go2-W, AgiBot Lingxi X2</li>
+      </ul>
+    </section>
+    <section id="research-interests">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Robot Learning and Reinforcement Learning</li>
+        <li>Vision-Language-Action Models</li>
+        <li>Robot Manipulation and Grasping</li>
+        <li>Robotics Simulation, SLAM and Navigation</li>
+      </ul>
+    </section>
+    <section id="honors-and-awards">
+      <h2>Honors and Awards</h2>
+      <ul>
+        <li class="hon"><span>President's List, University of the People (12 terms)</span><span class="ed">2021–2024</span></li>
+        <li class="hon"><span>Outstanding Contribution Award, Huawei Nanjing R&amp;D Institute</span><span class="ed">2019</span></li>
+        <li class="hon"><span>Outstanding Graduate Student, Hohai University</span><span class="ed">2017</span></li>
+        <li class="hon"><span>Hohai University Scholarship</span><span class="ed">2015–2017</span></li>
+        <li class="hon"><span>Anhui Agricultural University Scholarship</span><span class="ed">2012</span></li>
+      </ul>
+    </section>
+    <section id="teaching-and-outreach">
+      <h2>Teaching and Outreach</h2>
+      <div class="ent"><div class="eh"><span class="et">Humanoid Robotics Curriculum on AgiBot Lingxi X2</span><span class="eo">WellWin Technology</span></div></div>
+      <ul>
+        <li>Designed a humanoid robotics curriculum for Macao secondary school students, progressing from no-code tools (LingXin, LinkCraft) to ROS 2 programming with the AimDK SDK, and finally to multi-platform integration.</li>
+      </ul>
+      <div class="ent"><div class="eh"><span class="et">Humanoid Robot Task Challenge, MYAIR 2027</span><span class="eo">Macau Youth AI and Robotics Competition</span></div></div>
+      <ul>
+        <li>Designed the task and rules for a humanoid robot ball-shooting competition, testing vision recognition, trajectory planning and 3D printing.</li>
+      </ul>
+      <div class="ent"><div class="eh"><span class="et">UoPeople Ambassador</span><span class="eo">University of the People (AY2022, Term 5)</span></div></div>
+      <ul>
+        <li>Answered prospective students' questions about admissions and academics, helping applicants with limited educational opportunities gain access to quality higher education. <a href="/files/UoPeople_Ambassador_Certificate.pdf">Certificate</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer><span>© 2026 Zhiyao He</span><a href="/blog/">Blog</a></footer>
+</div>
 </body>
 </html>
