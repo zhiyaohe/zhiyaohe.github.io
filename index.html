@@ -43,12 +43,14 @@
   li.sk{list-style:none;margin-left:-20px;display:grid;grid-template-columns:220px 1fr;gap:12px;margin-bottom:8px}
   .lab{font-weight:600}
   .me{font-weight:600}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   footer{margin-top:64px;padding-top:18px;border-top:1px solid var(--line);color:var(--faint);font-size:13.5px;display:flex;justify-content:space-between}
   @media (max-width:600px){header{flex-direction:column-reverse;gap:18px} .photo{width:100px;height:125px} .wrap{padding:36px 18px 56px} header h1{font-size:32px}
     .ent{flex-direction:column;gap:2px} .ent .ed{order:-1;font-size:13px} li.sk{grid-template-columns:1fr;gap:0}}
 </style>
 </head>
-<body>
+<body id="top">
 <div class="wrap">
   <nav class="top"><a href="/files/Zhiyao_He_CV.pdf">CV</a><a href="/blog/">Blog</a><a href="https://github.com/zhiyaohe?tab=repositories">GitHub</a></nav>
   <header>
@@ -186,7 +188,7 @@
       </ul>
     </section>
   </main>
-  <footer><span>© 2026 Zhiyao He</span><a href="/blog/">Blog</a></footer>
+  <footer><span>© 2026 Zhiyao He</span><a href="#top">Back to Top</a></footer>
 </div>
 </body>
 </html>

@@ -595,6 +595,13 @@
   </url>
   
   <url>
+    <loc>https://zhiyaohe.github.io/tags/CS1103-Discussion-Assignment/</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://zhiyaohe.github.io/tags/CS1103-Exercise/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -623,13 +630,6 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/CS1103-Discussion-Assignment/</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://zhiyaohe.github.io/tags/CS1103-Learning-Journal/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -651,14 +651,14 @@
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/CS2401-Discussion-Assignment/</loc>
+    <loc>https://zhiyaohe.github.io/tags/CS2401-Learning-Journal/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://zhiyaohe.github.io/tags/CS2401-Learning-Journal/</loc>
+    <loc>https://zhiyaohe.github.io/tags/CS2401-Discussion-Assignment/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
